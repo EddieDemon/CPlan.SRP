@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TCP_Test.cs" />
+    <Compile Include="TCP_Test_Client.cs" />
+    <Compile Include="TCP_Test_Host.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CPlan.SRP.Client\CPlan.SRP.Client.csproj">

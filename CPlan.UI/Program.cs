@@ -53,18 +53,36 @@ namespace CPlan.UI
             var x = C.Calcx(salt, userName, password);
             var cS = C.CalcS(a, B, k, x, u, g, N);
             var cK = C.CalcK(cS);
-            var cM = C.M(N, g, userName, salt, A, B, cK);
+            var cM = C.M(userName, salt, A, B, cK, N, g);
             var cM2 = C.M2(A, cM, cK);
 
             // Host side internal calculations.            
             var sS = H.CalcS(A, verifier, u, b, N);
             var sK = C.CalcK(sS);
-            var sM = C.M(N, g, userName, salt, A, B, sK);
+            var sM = C.M(userName, salt, A, B, sK, N, g);
             var sM2 = C.M2(A, cM, sK);
 
             // Check if any of these are equal.
-            bool M = cM.Equals(sM);
-            bool M2 = cM2.Equals(sM2);
+            bool M = C.CompareArrays(cM, sM);
+            bool M2 = C.CompareArrays(cM2, sM2);
+
+            // Print values
+            Console.WriteLine("Client M: " + BitConverter.ToString(cM));
+            Console.WriteLine("Server M: " + BitConverter.ToString(sM));
+            Console.WriteLine("Client M2: " + BitConverter.ToString(cM2));
+            Console.WriteLine("Server M2: " + BitConverter.ToString(sM2));
+            Console.WriteLine("Control M=M " + M);
+            Console.WriteLine("Control M2=M2 " + M2);
+
+            // Throwing a test over TCP!
+            // Set salt and v so it looks like it has been collected from a database.
+            TCP_Test.salt = salt;
+            TCP_Test.v = verifier;
+            Console.WriteLine("");
+            Console.WriteLine("Testing over TCP...");
+            TCP_Test t = new TCP_Test();
+            Console.WriteLine("Testing completed!!");
+            Console.ReadLine();
         }
     }
 }

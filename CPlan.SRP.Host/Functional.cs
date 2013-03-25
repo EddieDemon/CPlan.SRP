@@ -32,7 +32,7 @@ namespace CPlan.SRP.Host
         {
             RandomNumberGenerator r = RNGCryptoServiceProvider.Create();
             // TODO: Probably a and b must have the same length; Verify this.
-            byte[] b = new byte[256 / 8]; // http://www.ietf.org/rfc/rfc5054.txt Paragraph: 2.5.4.
+            byte[] b = new byte[256 / 8]; // http://tools.ietf.org/html/rfc5054 Paragraph: 2.5.4.
             r.GetBytes(b);
             BigInteger _b = new BigInteger(b);
             return _b.Sign != 1 ? BigInteger.Negate(_b) : _b; // Check if a is negative, if so, change it to positve.

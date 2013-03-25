@@ -28,15 +28,6 @@ namespace CPlan.SRP.Client
     {
         private static SHA1 sha = SHA1.Create();
 
-        // N and g can be different per authentication. Unsafe to make it static on this level.
-        ///// <summary>
-        ///// The prime N. Default 1024 bits.
-        ///// </summary>
-        //public static BigInteger N = Constants.N1024Bit;
-        ///// <summary>
-        ///// The generator.
-        ///// </summary>
-        //public static BigInteger g = Constants.g1024Bit;
         /// <summary>
         /// Get randomly generated a.
         /// </summary>
@@ -44,7 +35,7 @@ namespace CPlan.SRP.Client
         public static BigInteger Geta()
         {
             RandomNumberGenerator r = RNGCryptoServiceProvider.Create();
-            byte[] a = new byte[256 / 8]; // http://www.ietf.org/rfc/rfc5054.txt Paragraph: 2.5.4.
+            byte[] a = new byte[256 / 8]; // http://tools.ietf.org/html/rfc5054 Paragraph: 2.5.4.
             r.GetBytes(a);
             BigInteger _a = new BigInteger(a);
             return _a.Sign != 1 ? BigInteger.Negate(_a) : _a; // Check if a is negative, if so, change it to positve.
@@ -71,11 +62,11 @@ namespace CPlan.SRP.Client
         /// <returns>SHA1(N | PAD(g))</returns>
         public static BigInteger Calck(BigInteger g, BigInteger N)
         {
-            string _N = BitConverter.ToString(N.ToByteArray()).Replace("-", string.Empty);
-            byte[] _g = Encoding.ASCII.GetBytes(BitConverter.ToString(g.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
-            BigInteger k = new BigInteger(sha.ComputeHash(N.ToByteArray().Concat(_g).ToArray()));
-            if (k.Sign != 1) k = BigInteger.Negate(k);
-            return k;
+            //string _N = BitConverter.ToString(N.ToByteArray()).Replace("-", string.Empty);
+            //byte[] _g = Encoding.ASCII.GetBytes(BitConverter.ToString(g.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
+            //BigInteger k = new BigInteger(sha.ComputeHash(N.ToByteArray().Concat(_g).ToArray()));
+            BigInteger k = new BigInteger(N.ToByteArray().Concat(g.ToByteArray()).ToArray());
+            return k.Sign != 1 ? BigInteger.Negate(k) : k;
         }
         /// <summary>
         /// Calculates u using client-side A and server-side B.
@@ -86,11 +77,12 @@ namespace CPlan.SRP.Client
         /// <returns>SHA1(PAD(A) | PAD(B))</returns>
         public static BigInteger Calcu(BigInteger A, BigInteger B, BigInteger N)
         {
-            string _N = BitConverter.ToString(N.ToByteArray()).Replace("-", string.Empty);
-            byte[] _A = Encoding.ASCII.GetBytes(BitConverter.ToString(A.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
-            byte[] _B = Encoding.ASCII.GetBytes(BitConverter.ToString(B.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
-            BigInteger u = new BigInteger(sha.ComputeHash(_A.Concat(_B).ToArray()));
-            if (u.Sign != 1) u = BigInteger.Negate(u);
+            // According to http://tools.ietf.org/html/rfc2945 paragraph 3 sub paragraph 8 u is an uint32.
+            //string _N = BitConverter.ToString(N.ToByteArray()).Replace("-", string.Empty);
+            //byte[] _A = Encoding.ASCII.GetBytes(BitConverter.ToString(A.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
+            //byte[] _B = Encoding.ASCII.GetBytes(BitConverter.ToString(B.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
+            //BigInteger u = BitConverter.ToUInt32(sha.ComputeHash(_A.Concat(_B).Take(32).ToArray()), 0);
+            BigInteger u = BitConverter.ToUInt32(sha.ComputeHash(A.ToByteArray().Concat(B.ToByteArray()).Take(32).ToArray()), 0);
             return u;
         }
         /// <summary>
@@ -103,8 +95,7 @@ namespace CPlan.SRP.Client
         public static BigInteger Calcx(byte[] salt, string userName, string password)
         {
             BigInteger x = new BigInteger(sha.ComputeHash(salt.Concat(sha.ComputeHash(Encoding.UTF8.GetBytes(userName + "|" + password))).ToArray()));
-            if (x.Sign != 1) x = BigInteger.Negate(x);
-            return x;
+            return x.Sign != 1 ? BigInteger.Negate(x) : x;
         }
         /// <summary>
         /// Calculates the secret.
@@ -119,8 +110,9 @@ namespace CPlan.SRP.Client
         /// <returns>(B - (k * g^x)) ^ (a + (u * x)) % N</returns>
         public static BigInteger CalcS(BigInteger a, BigInteger B, BigInteger k, BigInteger x, BigInteger u, BigInteger g, BigInteger N)
         {
-            BigInteger S = BigInteger.ModPow((BigInteger.Min(B, (BigInteger.Multiply(k, BigInteger.ModPow(g, x, N))))), (BigInteger.Add(a, (BigInteger.Multiply(u, x)))), N);
-            return S;
+            //BigInteger S = BigInteger.ModPow((BigInteger.Min(B, (BigInteger.Multiply(k, BigInteger.ModPow(g, x, N))))) % N, (BigInteger.Add(a, (BigInteger.Multiply(u, x)))), N);
+            BigInteger S = BigInteger.ModPow(((B - (k * BigInteger.ModPow(g, x, N)))), (a + (u * x)), N);
+            return S.Sign != 1 ? BigInteger.Negate(S) : S;
         }
         /// <summary>
         /// Calculates K.
@@ -136,14 +128,14 @@ namespace CPlan.SRP.Client
         /// <summary>
         /// Calculates the key proof.
         /// </summary>      
-        /// <param name="userName"></param>
-        /// <param name="salt"></param>
-        /// <param name="A"></param>
-        /// <param name="B"></param>
-        /// <param name="K"></param>
-        /// <param name="g"></param>
-        /// <param name="N"></param>
-        /// <returns></returns>
+        /// <param name="userName">The user name.</param>
+        /// <param name="salt">The salt.</param>
+        /// <param name="A">Client public value.</param>
+        /// <param name="B">Server public value.</param>
+        /// <param name="K">The K.</param>
+        /// <param name="g">The generator.</param>
+        /// <param name="N">The large prime.</param>
+        /// <returns>H(H(N) XOR H(g) | H(U) | s | A | B | K)</returns>
         public static byte[] M(string userName, byte[] salt, BigInteger A, BigInteger B, byte[] K, BigInteger g, BigInteger N)
         {
             byte[] Ng = XorArrays(sha.ComputeHash(N.ToByteArray()), sha.ComputeHash(g.ToByteArray()));
@@ -151,12 +143,12 @@ namespace CPlan.SRP.Client
             return M;
         }
         /// <summary>
-        /// 
+        /// Calculates the second key proof.
         /// </summary>
-        /// <param name="A"></param>
-        /// <param name="M"></param>
-        /// <param name="K"></param>
-        /// <returns></returns>
+        /// <param name="A">Client public value.</param>
+        /// <param name="M">The first key proof.</param>
+        /// <param name="K">The K.</param>
+        /// <returns>H(A | M | K)</returns>
         public static byte[] M2(BigInteger A, byte[] M, byte[] K)
         {
             byte[] M2 = sha.ComputeHash(A.ToByteArray().Concat(M.Concat(K)).ToArray());
@@ -193,7 +185,6 @@ namespace CPlan.SRP.Client
             if (v.Sign != 1) v = BigInteger.Negate(v);
             return BigInteger.ModPow(g, x, N);
         }
-
         /// <summary>
         /// XOR two byte arrays together and returns result.  Both arrays must be same length and neither can be null.
         /// Resulting array will be same size as array1.
@@ -219,7 +210,19 @@ namespace CPlan.SRP.Client
             }
             return newArray;
         }
-
+        /// <summary>
+        /// Compares two arrays.
+        /// </summary>
+        /// <param name="left">The left side of the operation.</param>
+        /// <param name="right">The right side of the operation.</param>
+        /// <returns>True if both arrays are equal to each other; else false.</returns>
+        public static bool CompareArrays(byte[] left, byte[] right)
+        {
+            if (left == null || right == null || left.Length != right.Length) return false;
+            for (int i = 0; i < left.Length; i++)
+                if (left[i] != right[i]) return false;
+            return true;
+        }
         #endregion
     }
 }

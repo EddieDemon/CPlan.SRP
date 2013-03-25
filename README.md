@@ -1,12 +1,13 @@
 Connection Planet - SRP Implementation.
 =======================================
 
-I know that this isn't completely functioning. So, please, help me out whenever you find issue.
-
-Thank you in advance.
+An implmentation of the SRP (Secure Remote Password) version 6a in the .Net Framework version 4.0.
+Created by MusicDemon for Connection Planet.
+Purpose; Securing server-client communication without using SSL/TLS etc.
+Created after [RFC5054](http://tools.ietf.org/html/rfc5054)
 
 ## Story behind
-I was wondering how to secure my web-calls from my desktop applications to my website applications. To do this, I wanted to get it working with SRP6a. However, for some reason I seem not to be able to get the to work with Resource#3, the WSE implementation.
+I was wondering how to secure my web-calls from my desktop applications to my website applications. To do this, I wanted to get it working with SRP6a. However, for some reason I seem not to be able to get the to work with [Resource](/Resources)#3, the WSE implementation. So, without a lack of doubt I started this project with hope for a perfect implementation!
 
 ## Project setup
 The project has been divided by three sub-projects.
@@ -16,7 +17,11 @@ The project has been divided by three sub-projects.
 
 The server library contains functions that are not needed by the client library. However, most of the used functions are used on both libraries, that's why the server library has a reference to the client library.
 
+## Changelog
+- 1.1.2.0: Tested several times with same setup. It is working but, in my eye's can use more testing, just to be sure.
+- 1.0.0.0: Initial upload. Had issues with formulae like S/x/u.
+
 ## Resources
-- http://tools.ietf.org/html/rfc5054
-- http://tools.ietf.org/html/rfc2945
-- http://channel9.msdn.com/forums/sandbox/secure-remote-password-srp-in-wse
+- [RFC5054](http://tools.ietf.org/html/rfc5054)
+- [RFC2945](http://tools.ietf.org/html/rfc2945)
+- [Channel9](http://channel9.msdn.com/forums/sandbox/secure-remote-password-srp-in-wse)
