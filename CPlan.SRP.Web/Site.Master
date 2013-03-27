@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CPlan.SRP.Web.SiteMaster" %>
+
+<!--
+  -- Connection Planet - SRP6a Implementation
+  -- Copyright (C) 2013  MusicDemon
+  -- 
+  -- This program is free software: you can redistribute it and/or modify
+  -- it under the terms of the GNU General Public License as published by
+  -- the Free Software Foundation, either version 3 of the License, or
+  -- (at your option) any later version.
+  -- 
+  -- This program is distributed in the hope that it will be useful,
+  -- but WITHOUT ANY WARRANTY; without even the implied warranty of
+  -- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  -- GNU General Public License for more details.
+  -- 
+  -- You should have received a copy of the GNU General Public License
+  -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  --
+  --
+  -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>CPlan.SRP > srp4net implementation</title>
+    <script type="text/javascript" src="Scripts/jquery-1.9.1.min.js"></script>
+    <!-- http://www.json.org/js.html -->
+    <script type="text/javascript" src="scripts/json2.js"></script>
+    <!-- http://plugins.jquery.com/project/Dump -->
+    <script type="text/javascript" src="scripts/jquery.dump.js"></script>
+    <!-- http://trainofthoughts.org/repo/getfile?f=jquery/jquery.debug.js&v=40 -->
+    <script type="text/javascript" src="scripts/jquery.debug.js"></script>
+    <!-- http://ats.oka.nu/titaniumcore/js/tools/binary.js -->
+    <script type="text/javascript" src="scripts/binary.js"></script>
+    <!-- http://www.leemon.com/crypto/BigInt.js -->
+    <script type="text/javascript" src="scripts/BigInt.js"></script>
+    <!-- http://ats.oka.nu/titaniumcore/js/crypto/jsSHA.js -->
+    <script type="text/javascript" src="scripts/jsSHA.js"></script>
+    <!-- http://ats.oka.nu/titaniumcore/js/crypto/SHA.js -->
+    <script type="text/javascript" src="scripts/SHA.js"></script>
+    <!-- http://code.google.com/p/srp4net/ -->
+    <script type="text/javascript" src="scripts/crypto.js"></script>
+    <!-- http://code.google.com/p/srp4net/ -->
+    <script type="text/javascript" src="scripts/crypto-srp.js"></script>
+    <!-- http://code.google.com/p/srp4net/ -->
+    <script type="text/javascript" src="scripts/misc.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="title">
+        <h1>
+            CPlan.SRP > srp4net implementation
+        </h1>
+    </div>
+    <div class="main">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    <footer>Copyright &copy; 2013 Connection Planet</footer>
+</body>
+</html>
