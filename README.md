@@ -6,6 +6,10 @@ Created by MusicDemon for Connection Planet.
 Purpose; Securing server-client communication without using SSL/TLS etc.
 Created after [RFC5054](http://tools.ietf.org/html/rfc5054)
 
+## JS branch
+This branch is for communication between a webserver and a webclient using Javascript.
+This branch uses code from [jQuery](http://jquery.org/)
+
 ## Story behind
 I was wondering how to secure my web-calls from my desktop applications to my website applications. To do this, I wanted to get it working with SRP6a. However, for some reason I seem not to be able to get the to work with [Resource](#Resources)#3, the WSE implementation. So, without a lack of doubt I started this project with hope for a perfect implementation!
 
