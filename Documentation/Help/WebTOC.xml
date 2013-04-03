@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="ff7ce24d-f7ce-465f-988c-aee297e077ac" Title="CPlan.SRP.Client Namespace" Url="html/N_CPlan_SRP_Client.htm">
+    <HelpTOCNode Id="03f9af0d-269f-4d4b-b51e-d9a9e6c9906a" Title="Constants Class" Url="html/T_CPlan_SRP_Client_Constants.htm">
+      <HelpTOCNode Title="Constants Members" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
+      <HelpTOCNode Title="Constants Constructor " Url="html/M_CPlan_SRP_Client_Constants__cctor.htm" />
+      <HelpTOCNode Id="f372a18c-c316-4bef-ac5e-a0c6d91ca7cd" Title="Constants Fields" Url="html/Fields_T_CPlan_SRP_Client_Constants.htm">
+        <HelpTOCNode Title="g1024Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g1024Bit.htm" />
+        <HelpTOCNode Title="g1536Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g1536Bit.htm" />
+        <HelpTOCNode Title="g2048Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g2048Bit.htm" />
+        <HelpTOCNode Title="g3072Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g3072Bit.htm" />
+        <HelpTOCNode Title="g4096Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g4096Bit.htm" />
+        <HelpTOCNode Title="g6144Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g6144Bit.htm" />
+        <HelpTOCNode Title="g8192Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g8192Bit.htm" />
+        <HelpTOCNode Title="N1024Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N1024Bit.htm" />
+        <HelpTOCNode Title="N1536Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N1536Bit.htm" />
+        <HelpTOCNode Title="N2048Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N2048Bit.htm" />
+        <HelpTOCNode Title="N3072Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N3072Bit.htm" />
+        <HelpTOCNode Title="N4096Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N4096Bit.htm" />
+        <HelpTOCNode Title="N6144Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N6144Bit.htm" />
+        <HelpTOCNode Title="N8192Bit Field" Url="html/F_CPlan_SRP_Client_Constants_N8192Bit.htm" />
+        <HelpTOCNode Title="prime1024Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime1024Bit.htm" />
+        <HelpTOCNode Title="prime1536Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime1536Bit.htm" />
+        <HelpTOCNode Title="prime2048Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime2048Bit.htm" />
+        <HelpTOCNode Title="prime3072Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime3072Bit.htm" />
+        <HelpTOCNode Title="prime4096Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime4096Bit.htm" />
+        <HelpTOCNode Title="prime6144Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime6144Bit.htm" />
+        <HelpTOCNode Title="prime8192Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime8192Bit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="89fa2b9e-c735-4d10-92c3-da849c65e11e" Title="Functional Class" Url="html/T_CPlan_SRP_Client_Functional.htm">
+      <HelpTOCNode Title="Functional Members" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
+      <HelpTOCNode Title="Functional Constructor " Url="html/M_CPlan_SRP_Client_Functional__cctor.htm" />
+      <HelpTOCNode Id="ce87239c-f723-4887-a3d0-3487a4f4c63c" Title="Functional Fields" Url="html/Fields_T_CPlan_SRP_Client_Functional.htm">
+        <HelpTOCNode Title="sha Field" Url="html/F_CPlan_SRP_Client_Functional_sha.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="932ee244-e731-4288-b09a-3d8d2368b4c4" Title="Functional Methods" Url="html/Methods_T_CPlan_SRP_Client_Functional.htm">
+        <HelpTOCNode Title="CalcA Method " Url="html/M_CPlan_SRP_Client_Functional_CalcA.htm" />
+        <HelpTOCNode Title="M:CPlan.SRP.Client.Functional.Calck(System.Numerics.BigInteger,System.Numerics.BigInteger)" Url="" />
+        <HelpTOCNode Title="Calck Method " Url="html/M_CPlan_SRP_Client_Functional_CalcK.htm" />
+        <HelpTOCNode Title="CalcS Method " Url="html/M_CPlan_SRP_Client_Functional_CalcS.htm" />
+        <HelpTOCNode Title="Calcu Method " Url="html/M_CPlan_SRP_Client_Functional_Calcu.htm" />
+        <HelpTOCNode Title="Calcx Method " Url="html/M_CPlan_SRP_Client_Functional_Calcx.htm" />
+        <HelpTOCNode Title="CompareArrays Method " Url="html/M_CPlan_SRP_Client_Functional_CompareArrays.htm" />
+        <HelpTOCNode Title="Geta Method " Url="html/M_CPlan_SRP_Client_Functional_Geta.htm" />
+        <HelpTOCNode Title="GetSalt Method " Url="html/M_CPlan_SRP_Client_Functional_GetSalt.htm" />
+        <HelpTOCNode Title="GetVerifier Method " Url="html/M_CPlan_SRP_Client_Functional_GetVerifier.htm" />
+        <HelpTOCNode Title="M Method " Url="html/M_CPlan_SRP_Client_Functional_M.htm" />
+        <HelpTOCNode Title="M2 Method " Url="html/M_CPlan_SRP_Client_Functional_M2.htm" />
+        <HelpTOCNode Title="XorArrays Method " Url="html/M_CPlan_SRP_Client_Functional_XorArrays.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="f02126f5-4add-4808-b843-dcced4fdc30e" Title="CPlan.SRP.Host Namespace" Url="html/N_CPlan_SRP_Host.htm">
+    <HelpTOCNode Id="8a43b180-d9f5-4be0-b35e-6356c0124939" Title="Functional Class" Url="html/T_CPlan_SRP_Host_Functional.htm">
+      <HelpTOCNode Title="Functional Members" Url="html/AllMembers_T_CPlan_SRP_Host_Functional.htm" />
+      <HelpTOCNode Id="3bbcf517-d9ef-4218-9feb-0ec029b58d7c" Title="Functional Methods" Url="html/Methods_T_CPlan_SRP_Host_Functional.htm">
+        <HelpTOCNode Title="CalcB Method " Url="html/M_CPlan_SRP_Host_Functional_CalcB.htm" />
+        <HelpTOCNode Title="CalcS Method " Url="html/M_CPlan_SRP_Host_Functional_CalcS.htm" />
+        <HelpTOCNode Title="Getb Method " Url="html/M_CPlan_SRP_Host_Functional_Getb.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

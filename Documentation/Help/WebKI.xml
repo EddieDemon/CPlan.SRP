@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="CalcA method" Url="html/M_CPlan_SRP_Client_Functional_CalcA.htm" />
+  <HelpKINode Title="CalcB method" Url="html/M_CPlan_SRP_Host_Functional_CalcB.htm" />
+  <HelpKINode Title="Calck method" Url="html/M_CPlan_SRP_Client_Functional_CalcK.htm" />
+  <HelpKINode Title="CalcS method" Url="html/M_CPlan_SRP_Client_Functional_CalcS.htm" />
+  <HelpKINode Title="CalcS method" Url="html/M_CPlan_SRP_Host_Functional_CalcS.htm" />
+  <HelpKINode Title="Calcu method" Url="html/M_CPlan_SRP_Client_Functional_Calcu.htm" />
+  <HelpKINode Title="Calcx method" Url="html/M_CPlan_SRP_Client_Functional_Calcx.htm" />
+  <HelpKINode Title="CompareArrays method" Url="html/M_CPlan_SRP_Client_Functional_CompareArrays.htm" />
+  <HelpKINode Title="Constants class" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
+  <HelpKINode Title="Constants class" Url="html/T_CPlan_SRP_Client_Constants.htm" />
+  <HelpKINode Title="Constants class">
+    <HelpKINode Title="about Constants class" Url="html/T_CPlan_SRP_Client_Constants.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CPlan_SRP_Client_Constants__cctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_CPlan_SRP_Client_Constants.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Constants.Constants constructor" Url="html/M_CPlan_SRP_Client_Constants__cctor.htm" />
+  <HelpKINode Title="Constants.g1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_g1024Bit.htm" />
+  <HelpKINode Title="Constants.g1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_g1536Bit.htm" />
+  <HelpKINode Title="Constants.g2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_g2048Bit.htm" />
+  <HelpKINode Title="Constants.g3072Bit field" Url="html/F_CPlan_SRP_Client_Constants_g3072Bit.htm" />
+  <HelpKINode Title="Constants.g4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_g4096Bit.htm" />
+  <HelpKINode Title="Constants.g6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_g6144Bit.htm" />
+  <HelpKINode Title="Constants.g8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_g8192Bit.htm" />
+  <HelpKINode Title="Constants.N1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_N1024Bit.htm" />
+  <HelpKINode Title="Constants.N1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_N1536Bit.htm" />
+  <HelpKINode Title="Constants.N2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_N2048Bit.htm" />
+  <HelpKINode Title="Constants.N3072Bit field" Url="html/F_CPlan_SRP_Client_Constants_N3072Bit.htm" />
+  <HelpKINode Title="Constants.N4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_N4096Bit.htm" />
+  <HelpKINode Title="Constants.N6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_N6144Bit.htm" />
+  <HelpKINode Title="Constants.N8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_N8192Bit.htm" />
+  <HelpKINode Title="Constants.prime1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime1024Bit.htm" />
+  <HelpKINode Title="Constants.prime1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime1536Bit.htm" />
+  <HelpKINode Title="Constants.prime2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime2048Bit.htm" />
+  <HelpKINode Title="Constants.prime3072Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime3072Bit.htm" />
+  <HelpKINode Title="Constants.prime4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime4096Bit.htm" />
+  <HelpKINode Title="Constants.prime6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime6144Bit.htm" />
+  <HelpKINode Title="Constants.prime8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime8192Bit.htm" />
+  <HelpKINode Title="CPlan.SRP.Client namespace" Url="html/N_CPlan_SRP_Client.htm" />
+  <HelpKINode Title="CPlan.SRP.Client.Constants class" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
+  <HelpKINode Title="CPlan.SRP.Client.Constants class" Url="html/T_CPlan_SRP_Client_Constants.htm" />
+  <HelpKINode Title="CPlan.SRP.Client.Functional class" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
+  <HelpKINode Title="CPlan.SRP.Client.Functional class" Url="html/T_CPlan_SRP_Client_Functional.htm" />
+  <HelpKINode Title="CPlan.SRP.Host namespace" Url="html/N_CPlan_SRP_Host.htm" />
+  <HelpKINode Title="CPlan.SRP.Host.Functional class" Url="html/AllMembers_T_CPlan_SRP_Host_Functional.htm" />
+  <HelpKINode Title="CPlan.SRP.Host.Functional class" Url="html/T_CPlan_SRP_Host_Functional.htm" />
+  <HelpKINode Title="Functional class" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
+  <HelpKINode Title="Functional class" Url="html/AllMembers_T_CPlan_SRP_Host_Functional.htm" />
+  <HelpKINode Title="Functional class" Url="html/T_CPlan_SRP_Client_Functional.htm" />
+  <HelpKINode Title="Functional class" Url="html/T_CPlan_SRP_Host_Functional.htm" />
+  <HelpKINode Title="Functional class">
+    <HelpKINode Title="about Functional class" Url="html/T_CPlan_SRP_Client_Functional.htm" />
+    <HelpKINode Title="about Functional class" Url="html/T_CPlan_SRP_Host_Functional.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CPlan_SRP_Host_Functional.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CPlan_SRP_Client_Functional__cctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_CPlan_SRP_Client_Functional.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CPlan_SRP_Client_Functional.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CPlan_SRP_Host_Functional.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Functional.CalcA method" Url="html/M_CPlan_SRP_Client_Functional_CalcA.htm" />
+  <HelpKINode Title="Functional.CalcB method" Url="html/M_CPlan_SRP_Host_Functional_CalcB.htm" />
+  <HelpKINode Title="Functional.Calck method" Url="html/M_CPlan_SRP_Client_Functional_CalcK.htm" />
+  <HelpKINode Title="Functional.CalcS method" Url="html/M_CPlan_SRP_Client_Functional_CalcS.htm" />
+  <HelpKINode Title="Functional.CalcS method" Url="html/M_CPlan_SRP_Host_Functional_CalcS.htm" />
+  <HelpKINode Title="Functional.Calcu method" Url="html/M_CPlan_SRP_Client_Functional_Calcu.htm" />
+  <HelpKINode Title="Functional.Calcx method" Url="html/M_CPlan_SRP_Client_Functional_Calcx.htm" />
+  <HelpKINode Title="Functional.CompareArrays method" Url="html/M_CPlan_SRP_Client_Functional_CompareArrays.htm" />
+  <HelpKINode Title="Functional.Functional constructor" Url="html/M_CPlan_SRP_Client_Functional__cctor.htm" />
+  <HelpKINode Title="Functional.Geta method" Url="html/M_CPlan_SRP_Client_Functional_Geta.htm" />
+  <HelpKINode Title="Functional.Getb method" Url="html/M_CPlan_SRP_Host_Functional_Getb.htm" />
+  <HelpKINode Title="Functional.GetSalt method" Url="html/M_CPlan_SRP_Client_Functional_GetSalt.htm" />
+  <HelpKINode Title="Functional.GetVerifier method" Url="html/M_CPlan_SRP_Client_Functional_GetVerifier.htm" />
+  <HelpKINode Title="Functional.M method" Url="html/M_CPlan_SRP_Client_Functional_M.htm" />
+  <HelpKINode Title="Functional.M2 method" Url="html/M_CPlan_SRP_Client_Functional_M2.htm" />
+  <HelpKINode Title="Functional.sha field" Url="html/F_CPlan_SRP_Client_Functional_sha.htm" />
+  <HelpKINode Title="Functional.XorArrays method" Url="html/M_CPlan_SRP_Client_Functional_XorArrays.htm" />
+  <HelpKINode Title="g1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_g1024Bit.htm" />
+  <HelpKINode Title="g1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_g1536Bit.htm" />
+  <HelpKINode Title="g2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_g2048Bit.htm" />
+  <HelpKINode Title="g3072Bit field" Url="html/F_CPlan_SRP_Client_Constants_g3072Bit.htm" />
+  <HelpKINode Title="g4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_g4096Bit.htm" />
+  <HelpKINode Title="g6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_g6144Bit.htm" />
+  <HelpKINode Title="g8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_g8192Bit.htm" />
+  <HelpKINode Title="Geta method" Url="html/M_CPlan_SRP_Client_Functional_Geta.htm" />
+  <HelpKINode Title="Getb method" Url="html/M_CPlan_SRP_Host_Functional_Getb.htm" />
+  <HelpKINode Title="GetSalt method" Url="html/M_CPlan_SRP_Client_Functional_GetSalt.htm" />
+  <HelpKINode Title="GetVerifier method" Url="html/M_CPlan_SRP_Client_Functional_GetVerifier.htm" />
+  <HelpKINode Title="M method" Url="html/M_CPlan_SRP_Client_Functional_M.htm" />
+  <HelpKINode Title="M2 method" Url="html/M_CPlan_SRP_Client_Functional_M2.htm" />
+  <HelpKINode Title="N1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_N1024Bit.htm" />
+  <HelpKINode Title="N1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_N1536Bit.htm" />
+  <HelpKINode Title="N2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_N2048Bit.htm" />
+  <HelpKINode Title="N3072Bit field" Url="html/F_CPlan_SRP_Client_Constants_N3072Bit.htm" />
+  <HelpKINode Title="N4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_N4096Bit.htm" />
+  <HelpKINode Title="N6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_N6144Bit.htm" />
+  <HelpKINode Title="N8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_N8192Bit.htm" />
+  <HelpKINode Title="prime1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime1024Bit.htm" />
+  <HelpKINode Title="prime1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime1536Bit.htm" />
+  <HelpKINode Title="prime2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime2048Bit.htm" />
+  <HelpKINode Title="prime3072Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime3072Bit.htm" />
+  <HelpKINode Title="prime4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime4096Bit.htm" />
+  <HelpKINode Title="prime6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime6144Bit.htm" />
+  <HelpKINode Title="prime8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime8192Bit.htm" />
+  <HelpKINode Title="sha field" Url="html/F_CPlan_SRP_Client_Functional_sha.htm" />
+  <HelpKINode Title="XorArrays method" Url="html/M_CPlan_SRP_Client_Functional_XorArrays.htm" />
+</HelpKI>
