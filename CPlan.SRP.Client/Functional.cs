@@ -26,7 +26,10 @@ namespace CPlan.SRP.Client
 {
     public static class Functional
     {
-        private static SHA1 sha = SHA1.Create();
+        /// <summary>
+        /// Gets or sets the hash algorithm for the SHA1 functions.
+        /// </summary>
+        public static HashAlgorithm algorithm = SHA1.Create();
 
         /// <summary>
         /// Get randomly generated a.
@@ -82,7 +85,7 @@ namespace CPlan.SRP.Client
             //byte[] _A = Encoding.ASCII.GetBytes(BitConverter.ToString(A.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
             //byte[] _B = Encoding.ASCII.GetBytes(BitConverter.ToString(B.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));
             //BigInteger u = BitConverter.ToUInt32(sha.ComputeHash(_A.Concat(_B).Take(32).ToArray()), 0);
-            BigInteger u = BitConverter.ToUInt32(sha.ComputeHash(A.ToByteArray().Concat(B.ToByteArray()).Take(32).ToArray()), 0);
+            BigInteger u = BitConverter.ToUInt32(algorithm.ComputeHash(A.ToByteArray().Concat(B.ToByteArray()).Take(32).ToArray()), 0);
             return u;
         }
         /// <summary>
@@ -94,7 +97,7 @@ namespace CPlan.SRP.Client
         /// <returns>SHA1(s | SHA1(I | ":" | P))</returns>
         public static BigInteger Calcx(byte[] salt, string userName, string password)
         {
-            BigInteger x = new BigInteger(sha.ComputeHash(salt.Concat(sha.ComputeHash(Encoding.UTF8.GetBytes(userName + "|" + password))).ToArray()));
+            BigInteger x = new BigInteger(algorithm.ComputeHash(salt.Concat(algorithm.ComputeHash(Encoding.UTF8.GetBytes(userName + "|" + password))).ToArray()));
             return x.Sign != 1 ? BigInteger.Negate(x) : x;
         }
         /// <summary>
@@ -138,9 +141,8 @@ namespace CPlan.SRP.Client
         /// <returns>H(H(N) XOR H(g) | H(U) | s | A | B | K)</returns>
         public static byte[] M(string userName, byte[] salt, BigInteger A, BigInteger B, byte[] K, BigInteger g, BigInteger N)
         {
-            byte[] Ng = XorArrays(sha.ComputeHash(N.ToByteArray()), sha.ComputeHash(g.ToByteArray()));
-            byte[] M = sha.ComputeHash(Ng.Concat(sha.ComputeHash(Encoding.UTF8.GetBytes(userName)).Concat(salt).Concat(A.ToByteArray()).Concat(B.ToByteArray()).Concat(K).ToArray()).ToArray());
-            return M;
+            byte[] Ng = XorArrays(algorithm.ComputeHash(N.ToByteArray()), algorithm.ComputeHash(g.ToByteArray()));
+            return algorithm.ComputeHash(Ng.Concat(algorithm.ComputeHash(Encoding.UTF8.GetBytes(userName)).Concat(salt).Concat(A.ToByteArray()).Concat(B.ToByteArray()).Concat(K).ToArray()).ToArray());
         }
         /// <summary>
         /// Calculates the second key proof.
@@ -151,7 +153,7 @@ namespace CPlan.SRP.Client
         /// <returns>H(A | M | K)</returns>
         public static byte[] M2(BigInteger A, byte[] M, byte[] K)
         {
-            byte[] M2 = sha.ComputeHash(A.ToByteArray().Concat(M.Concat(K)).ToArray());
+            byte[] M2 = algorithm.ComputeHash(A.ToByteArray().Concat(M.Concat(K)).ToArray());
             return M2;
         }
 
@@ -179,7 +181,7 @@ namespace CPlan.SRP.Client
         /// &lt;password verifier> = v = g^x % N</returns>
         public static BigInteger GetVerifier(byte[] salt, string userName, string password, BigInteger g, BigInteger N)
         {
-            BigInteger x = new BigInteger(sha.ComputeHash(salt.Concat(sha.ComputeHash(Encoding.UTF8.GetBytes(userName + "|" + password))).ToArray()));
+            BigInteger x = new BigInteger(algorithm.ComputeHash(salt.Concat(algorithm.ComputeHash(Encoding.UTF8.GetBytes(userName + "|" + password))).ToArray()));
             if (x.Sign != 1) x = BigInteger.Negate(x);
             BigInteger v = BigInteger.ModPow(g, x, N);
             if (v.Sign != 1) v = BigInteger.Negate(v);
