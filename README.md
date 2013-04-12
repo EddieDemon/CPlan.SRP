@@ -6,6 +6,8 @@ Created by MusicDemon for Connection Planet.
 Purpose; Securing server-client communication without using SSL/TLS etc.
 Created after [RFC5054](http://tools.ietf.org/html/rfc5054)
 
+> Please note: Because SRP4Net has a very different M calculation I'll be unable to produce the proper output. Please feel free to continue the work, the only thing seems to be the M.
+
 ## JS branch
 This branch is for communication between a webserver and a webclient using Javascript.
 This branch uses code from [jQuery](http://jquery.org/) and [srp4net](http://code.google.com/p/srp4net/).
