@@ -16,32 +16,27 @@ $u.crypto.srp =
     two: '',
     three: '',
 
-    bigint2hex: function(i)
-    {
+    bigint2hex: function (i) {
         // convert from a bigint number to a hex string
         return bigInt2str(i, 16);
     },
 
-    hex2bigint: function(s)
-    {
+    hex2bigint: function (s) {
         // convert from a hex string to a bigint number
         return str2bigInt(s, 16, 1);
     },
 
-    H: function(x)
-    {
+    H: function (x) {
         // hash a message
         return $u.crypto.hash(x);
     },
 
-    HHex: function(x)
-    {
+    HHex: function (x) {
         // hash a hex string
         return $u.crypto.hashHex(x);
     },
 
-    AddAccount: function(username, password, fnSuccess)
-    {
+    AddAccount: function (username, password, fnSuccess) {
         // Creating a new account
         // username = the username entered in the interface
         // password = the password entered in the interface
@@ -80,14 +75,12 @@ $u.crypto.srp =
             user: user,
             s: shex,
             v: this.bigint2hex(v)
-        }, function(result)
-        {
+        }, function (result) {
             fnSuccess(result.error, result.data);
         });
     },
 
-    Authenticate: function(username, password, fnSuccess)
-    {
+    Authenticate: function (username, password, fnSuccess) {
         // Authenticate an user
         // username = the username entered in the interface
         // password = the password entered in the interface
@@ -128,20 +121,16 @@ $u.crypto.srp =
             WS("SRP/AuthStep1", {
                 user: user,
                 A: AHex
-            }, function(result)
-            {
-                if (0 == result.error)
-                {
-                    with (result)
-                    {
+            }, function (result) {
+                if (0 == result.error) {
+                    with (result) {
                         uniq1 = data.uniq1;
                         sHex = data.s;
                         BHex = data.B;
                         u = hex2bigint(data.u);
                     }
                 }
-                else
-                {
+                else {
                     alert('SRP/AuthStep1 failed: error = ' + result.error);
                 }
             });
@@ -190,20 +179,16 @@ $u.crypto.srp =
                 user: user,
                 uniq1: uniq1,
                 m1: m1Hex
-            }, function(result)
-            {
-                if (0 == result.error)
-                {
-                    with (result)
-                    {
+            }, function (result) {
+                if (0 == result.error) {
+                    with (result) {
                         uniq2 = data.uniq2;
 
                         // m2server - server's proof that it has the correct key
                         m2server = hex2bigint(data.m2);
                     }
                 }
-                else
-                {
+                else {
                     alert('Failure while calling SRP/AuthStep2');
                 }
             });
@@ -217,13 +202,11 @@ $u.crypto.srp =
                 m1Hex +
                 KHex));
 
-            if (0 == compareTo(m2, m2server))
-            {
+            if (0 == compareTo(m2, m2server)) {
                 // the server is trusted
                 $.log('Client says: we trust the server');
             }
-            else
-            {
+            else {
                 alert('Client says: we do NOT trust the server');
                 return 1;
             }
@@ -232,8 +215,7 @@ $u.crypto.srp =
         return 0;
     },
 
-    initialize: function(NHex, gHex, kHex)
-    {
+    initialize: function (NHex, gHex, kHex) {
         this.one = this.hex2bigint("1");
         this.two = this.hex2bigint("2");
         this.three = this.hex2bigint("3");
@@ -244,37 +226,31 @@ $u.crypto.srp =
         this.k = this.hex2bigint(kHex);
     },
 
-    demo: function()
-    {
+    demo: function () {
         $.debug(true);
 
         var user = 'user1';
         var password = 'sameverycomplexpassword';
-        
+
         $.log("INFO: Running the sample for account '" + user + "' and password '" + password + "'");
         $.log("INFO: We'll execute two steps: 1. we will create the account; 2. we will authenticate on that account");
-        
+
         $.log("Adding the account");
-        this.AddAccount(user, password, function(error, result)
-        {
-            if (0 == error)
-            {
+        this.AddAccount(user, password, function (error, result) {
+            if (0 == error) {
                 $.log("The account was successfully added");
             }
-            else
-            {
+            else {
                 alert('AddAccount failed: error = ' + error + '\nThis should be the normal behavior when executing the second time this example (because the account was created at the first execution)');
             }
         });
 
         $.log("Authenticating...");
         var err = this.Authenticate('user1', 'sameverycomplexpassword');
-        if (0 == err)
-        {
+        if (0 == err) {
             $.log('Everything went OK. The authentication succeeded.');
         }
-        else
-        {
+        else {
             alert('Authenticaticate failed: error = ' + err);
         }
 

@@ -75,6 +75,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AuthenticationModels.cs" />
     <Compile Include="ScriptAuthentication.asmx.cs">
       <DependentUpon>ScriptAuthentication.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -98,6 +99,8 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="UserSession.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -126,7 +129,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>4383</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:8848/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

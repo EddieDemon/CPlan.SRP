@@ -22,9 +22,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using System.Numerics;
-
-using C = CPlan.SRP.Client.Functional;
-using H = CPlan.SRP.Host.Functional;
+using CPlan.SRP.Web.Models;
 
 namespace CPlan.SRP.Web
 {
@@ -38,15 +36,26 @@ namespace CPlan.SRP.Web
     public class Authentication : System.Web.Services.WebService
     {
         [WebMethod(EnableSession = true, MessageName = "SRP/AddAccount")]
-        public bool AddUser(string user, string s, string v)
+        public AuthenticationModel AddUser(string user, string s, string v)
         {
             if (s.Length % 2 == 0)
             {
-                User u = new User() { UserName = user, s = StringToByteArray(s), v = new BigInteger(StringToByteArray(v)) };
-                if (Global.users.Exists(usr => u.UserName.Equals(usr.UserName, StringComparison.InvariantCultureIgnoreCase))) return false;
+                UserSession u = new UserSession() { UserName = user, s = s.StringToByteArray(), v = new BigInteger(v.StringToByteArray()) };
+                if (Global.users.Exists(usr => u.UserName.Equals(usr.UserName, StringComparison.InvariantCultureIgnoreCase)))
+                    return new AuthenticationModel
+                    {
+                        error = 1
+                    };
                 Global.users.Add(u);
+                return new AuthenticationModel
+                {
+                    error = 0,
+                };
             }
-            return false;
+            return new AuthenticationModel
+            {
+                error = 2
+            };
         }
 
         /// <summary>
@@ -56,30 +65,63 @@ namespace CPlan.SRP.Web
         /// <param name="A">Public client value.</param>
         /// <returns>Returns B.</returns>
         [WebMethod(EnableSession = true, MessageName = "SRP/AuthStep1")]
-        public string Step1(string user, string A)
+        public AuthenticationModel Step1(string user, string A)
         {
             if (Global.users.Exists(usr => user.Equals(usr.UserName, StringComparison.InvariantCultureIgnoreCase)))
             {
                 User Usr = Global.users.Find(usr => user.Equals(usr.UserName, StringComparison.InvariantCultureIgnoreCase));
-                string name = user;
-                BigInteger _A = new BigInteger(StringToByteArray(A));
-                BigInteger b = H.Getb();
-                BigInteger B = H.CalcB(Global.k, Usr.v, b, Global.g, Global.N);
-                BigInteger u = C.Calcu(_A, B, Global.N);
-                BigInteger S = H.CalcS(_A, Usr.v, u, b, Global.N);
-                byte[] K = C.CalcK(S);
-                byte[] M = C.M(Usr.UserName, Usr.s, _A, B, K, Global.g, Global.N);
+                UserSession Usrs = (UserSession)Usr;
+                Usrs.SessionId(DateTime.Now.Ticks.ToString());
+                Usrs.CalculateEverything(A);
+                Global.sessions.Add(Usrs);
+                return new AuthenticationModel
+                {
+                    error = 0,
+                    data = new
+                    {
+                        uniq1 = Usrs.Id,
+                        s = BitConverter.ToString(Usr.s).Replace("-", ""),
+                        B = BitConverter.ToString(Usrs.B.ToByteArray()).Replace("-", ""),
+                        u = BitConverter.ToString(Usrs.u.ToByteArray()).Replace("-", "")
+                    }
+                };
             }
-            return "No.";
+            return new AuthenticationModel { error = 1 };
         }
 
-        public byte[] StringToByteArray(string hex)
+        [WebMethod(EnableSession = true, MessageName = "SRP/AuthStep2")]
+        public AuthenticationModel Step2(string user, string uniq1, string m1)
         {
-            int NumberChars = hex.Length;
-            byte[] bytes = new byte[NumberChars / 2];
-            for (int i = 0; i < NumberChars; i += 2)
-                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
-            return bytes;
+            foreach (var usr in Global.sessions)
+            {
+                var a = m1.StringToByteArray().Compare(usr.M4Net);
+                var b = m1.StringToByteArray();
+                var c = "";
+            }
+            IEnumerable<UserSession> Usrs = from usr in Global.sessions
+                                            where usr.UserName.Equals(user, StringComparison.InvariantCultureIgnoreCase) &&
+                                            usr.Id.Equals(uniq1) /*&&
+                                            m1.StringToByteArray().Compare(usr.M)*/
+                                            select usr;
+            if (Usrs.Count() > 0)
+            {
+                UserSession Usr = Usrs.First();
+                Usr.SessionId(DateTime.Now.Ticks.ToString());
+                var x = new AuthenticationModel
+                {
+                    error = 0,
+                    data = new
+                    {
+                        uniq2 = Usr.Id,
+                        m2 = BitConverter.ToString(Usr.M2).Replace("-", "")
+                    }
+                };
+                return x;
+            }
+            return new AuthenticationModel
+            {
+                error = 1,
+            };
         }
     }
 }

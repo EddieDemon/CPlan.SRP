@@ -29,6 +29,7 @@ namespace CPlan.SRP.Web
     public class Global : System.Web.HttpApplication
     {
         public static List<User> users;
+        public static List<UserSession> sessions;
         public static BigInteger N;
         public static BigInteger g;
         public static BigInteger k;
@@ -37,9 +38,11 @@ namespace CPlan.SRP.Web
         {
             // Code that runs on application startup
             users = new List<User>();
+            sessions = new List<UserSession>();
             N = Client.Constants.N1024Bit;
             g = Client.Constants.g1024Bit;
             k = Client.Functional.Calck(g, N);
+            Client.Functional.algorithm = System.Security.Cryptography.SHA256.Create();
         }
 
         public enum bis { N = 0, g = 1, k = 2 }
