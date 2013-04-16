@@ -1,13 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
 
+  <HelpKINode Title="a field" Url="html/F_CPlan_SRP_Client_Carrier_a.htm" />
+  <HelpKINode Title="A property" Url="html/P_CPlan_SRP_Client_Carrier_A.htm" />
+  <HelpKINode Title="algorithm field" Url="html/F_CPlan_SRP_Client_Functional_algorithm.htm" />
+  <HelpKINode Title="b field" Url="html/F_CPlan_SRP_Host_Carrier_b.htm" />
+  <HelpKINode Title="B property" Url="html/P_CPlan_SRP_Host_Carrier_B.htm" />
   <HelpKINode Title="CalcA method" Url="html/M_CPlan_SRP_Client_Functional_CalcA.htm" />
   <HelpKINode Title="CalcB method" Url="html/M_CPlan_SRP_Host_Functional_CalcB.htm" />
   <HelpKINode Title="Calck method" Url="html/M_CPlan_SRP_Client_Functional_CalcK.htm" />
   <HelpKINode Title="CalcS method" Url="html/M_CPlan_SRP_Client_Functional_CalcS.htm" />
   <HelpKINode Title="CalcS method" Url="html/M_CPlan_SRP_Host_Functional_CalcS.htm" />
   <HelpKINode Title="Calcu method" Url="html/M_CPlan_SRP_Client_Functional_Calcu.htm" />
+  <HelpKINode Title="CalculateEverthing method" Url="html/M_CPlan_SRP_Client_Carrier_CalculateEverthing.htm" />
+  <HelpKINode Title="CalculateEverthing method" Url="html/M_CPlan_SRP_Host_Carrier_CalculateEverthing.htm" />
   <HelpKINode Title="Calcx method" Url="html/M_CPlan_SRP_Client_Functional_Calcx.htm" />
+  <HelpKINode Title="Carrier class" Url="html/AllMembers_T_CPlan_SRP_Client_Carrier.htm" />
+  <HelpKINode Title="Carrier class" Url="html/AllMembers_T_CPlan_SRP_Host_Carrier.htm" />
+  <HelpKINode Title="Carrier class" Url="html/T_CPlan_SRP_Client_Carrier.htm" />
+  <HelpKINode Title="Carrier class" Url="html/T_CPlan_SRP_Host_Carrier.htm" />
+  <HelpKINode Title="Carrier class">
+    <HelpKINode Title="about Carrier class" Url="html/T_CPlan_SRP_Client_Carrier.htm" />
+    <HelpKINode Title="about Carrier class" Url="html/T_CPlan_SRP_Host_Carrier.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CPlan_SRP_Client_Carrier.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CPlan_SRP_Host_Carrier.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CPlan_SRP_Host_Carrier__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_CPlan_SRP_Client_Carrier__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_CPlan_SRP_Client_Carrier.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_CPlan_SRP_Host_Carrier.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CPlan_SRP_Client_Carrier.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CPlan_SRP_Host_Carrier.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CPlan_SRP_Client_Carrier.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CPlan_SRP_Host_Carrier.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Carrier.a field" Url="html/F_CPlan_SRP_Client_Carrier_a.htm" />
+  <HelpKINode Title="Carrier.A property" Url="html/P_CPlan_SRP_Client_Carrier_A.htm" />
+  <HelpKINode Title="Carrier.b field" Url="html/F_CPlan_SRP_Host_Carrier_b.htm" />
+  <HelpKINode Title="Carrier.B property" Url="html/P_CPlan_SRP_Host_Carrier_B.htm" />
+  <HelpKINode Title="Carrier.CalculateEverthing method" Url="html/M_CPlan_SRP_Client_Carrier_CalculateEverthing.htm" />
+  <HelpKINode Title="Carrier.CalculateEverthing method" Url="html/M_CPlan_SRP_Host_Carrier_CalculateEverthing.htm" />
+  <HelpKINode Title="Carrier.Carrier constructor" Url="html/M_CPlan_SRP_Host_Carrier__ctor.htm" />
+  <HelpKINode Title="Carrier.Carrier constructor" Url="html/Overload_CPlan_SRP_Client_Carrier__ctor.htm" />
+  <HelpKINode Title="Carrier.g property" Url="html/P_CPlan_SRP_Client_Carrier_g.htm" />
+  <HelpKINode Title="Carrier.g property" Url="html/P_CPlan_SRP_Host_Carrier_g.htm" />
+  <HelpKINode Title="Carrier.K property" Url="html/P_CPlan_SRP_Client_Carrier_K.htm" />
+  <HelpKINode Title="Carrier.K property" Url="html/P_CPlan_SRP_Host_Carrier_K.htm" />
+  <HelpKINode Title="Carrier.M property" Url="html/P_CPlan_SRP_Client_Carrier_M.htm" />
+  <HelpKINode Title="Carrier.M property" Url="html/P_CPlan_SRP_Host_Carrier_M.htm" />
+  <HelpKINode Title="Carrier.M2 property" Url="html/P_CPlan_SRP_Client_Carrier_M2.htm" />
+  <HelpKINode Title="Carrier.M2 property" Url="html/P_CPlan_SRP_Host_Carrier_M2.htm" />
+  <HelpKINode Title="Carrier.N property" Url="html/P_CPlan_SRP_Client_Carrier_N.htm" />
+  <HelpKINode Title="Carrier.N property" Url="html/P_CPlan_SRP_Host_Carrier_N.htm" />
+  <HelpKINode Title="Carrier.Password property" Url="html/P_CPlan_SRP_Client_Carrier_Password.htm" />
+  <HelpKINode Title="Carrier.Password property" Url="html/P_CPlan_SRP_Host_Carrier_Password.htm" />
+  <HelpKINode Title="Carrier.S property" Url="html/P_CPlan_SRP_Client_Carrier_S.htm" />
+  <HelpKINode Title="Carrier.S property" Url="html/P_CPlan_SRP_Host_Carrier_S.htm" />
+  <HelpKINode Title="Carrier.salt property" Url="html/P_CPlan_SRP_Host_Carrier_salt.htm" />
+  <HelpKINode Title="Carrier.UserName property" Url="html/P_CPlan_SRP_Client_Carrier_UserName.htm" />
+  <HelpKINode Title="Carrier.UserName property" Url="html/P_CPlan_SRP_Host_Carrier_UserName.htm" />
+  <HelpKINode Title="Carrier.v property" Url="html/P_CPlan_SRP_Host_Carrier_v.htm" />
   <HelpKINode Title="CompareArrays method" Url="html/M_CPlan_SRP_Client_Functional_CompareArrays.htm" />
   <HelpKINode Title="Constants class" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
   <HelpKINode Title="Constants class" Url="html/T_CPlan_SRP_Client_Constants.htm" />
@@ -40,11 +91,15 @@
   <HelpKINode Title="Constants.prime6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime6144Bit.htm" />
   <HelpKINode Title="Constants.prime8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime8192Bit.htm" />
   <HelpKINode Title="CPlan.SRP.Client namespace" Url="html/N_CPlan_SRP_Client.htm" />
+  <HelpKINode Title="CPlan.SRP.Client.Carrier class" Url="html/AllMembers_T_CPlan_SRP_Client_Carrier.htm" />
+  <HelpKINode Title="CPlan.SRP.Client.Carrier class" Url="html/T_CPlan_SRP_Client_Carrier.htm" />
   <HelpKINode Title="CPlan.SRP.Client.Constants class" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
   <HelpKINode Title="CPlan.SRP.Client.Constants class" Url="html/T_CPlan_SRP_Client_Constants.htm" />
   <HelpKINode Title="CPlan.SRP.Client.Functional class" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
   <HelpKINode Title="CPlan.SRP.Client.Functional class" Url="html/T_CPlan_SRP_Client_Functional.htm" />
   <HelpKINode Title="CPlan.SRP.Host namespace" Url="html/N_CPlan_SRP_Host.htm" />
+  <HelpKINode Title="CPlan.SRP.Host.Carrier class" Url="html/AllMembers_T_CPlan_SRP_Host_Carrier.htm" />
+  <HelpKINode Title="CPlan.SRP.Host.Carrier class" Url="html/T_CPlan_SRP_Host_Carrier.htm" />
   <HelpKINode Title="CPlan.SRP.Host.Functional class" Url="html/AllMembers_T_CPlan_SRP_Host_Functional.htm" />
   <HelpKINode Title="CPlan.SRP.Host.Functional class" Url="html/T_CPlan_SRP_Host_Functional.htm" />
   <HelpKINode Title="Functional class" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
@@ -61,6 +116,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_CPlan_SRP_Client_Functional.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_CPlan_SRP_Host_Functional.htm" />
   </HelpKINode>
+  <HelpKINode Title="Functional.algorithm field" Url="html/F_CPlan_SRP_Client_Functional_algorithm.htm" />
   <HelpKINode Title="Functional.CalcA method" Url="html/M_CPlan_SRP_Client_Functional_CalcA.htm" />
   <HelpKINode Title="Functional.CalcB method" Url="html/M_CPlan_SRP_Host_Functional_CalcB.htm" />
   <HelpKINode Title="Functional.Calck method" Url="html/M_CPlan_SRP_Client_Functional_CalcK.htm" />
@@ -76,8 +132,9 @@
   <HelpKINode Title="Functional.GetVerifier method" Url="html/M_CPlan_SRP_Client_Functional_GetVerifier.htm" />
   <HelpKINode Title="Functional.M method" Url="html/M_CPlan_SRP_Client_Functional_M.htm" />
   <HelpKINode Title="Functional.M2 method" Url="html/M_CPlan_SRP_Client_Functional_M2.htm" />
-  <HelpKINode Title="Functional.sha field" Url="html/F_CPlan_SRP_Client_Functional_sha.htm" />
   <HelpKINode Title="Functional.XorArrays method" Url="html/M_CPlan_SRP_Client_Functional_XorArrays.htm" />
+  <HelpKINode Title="g property" Url="html/P_CPlan_SRP_Client_Carrier_g.htm" />
+  <HelpKINode Title="g property" Url="html/P_CPlan_SRP_Host_Carrier_g.htm" />
   <HelpKINode Title="g1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_g1024Bit.htm" />
   <HelpKINode Title="g1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_g1536Bit.htm" />
   <HelpKINode Title="g2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_g2048Bit.htm" />
@@ -89,8 +146,16 @@
   <HelpKINode Title="Getb method" Url="html/M_CPlan_SRP_Host_Functional_Getb.htm" />
   <HelpKINode Title="GetSalt method" Url="html/M_CPlan_SRP_Client_Functional_GetSalt.htm" />
   <HelpKINode Title="GetVerifier method" Url="html/M_CPlan_SRP_Client_Functional_GetVerifier.htm" />
+  <HelpKINode Title="K property" Url="html/P_CPlan_SRP_Client_Carrier_K.htm" />
+  <HelpKINode Title="K property" Url="html/P_CPlan_SRP_Host_Carrier_K.htm" />
   <HelpKINode Title="M method" Url="html/M_CPlan_SRP_Client_Functional_M.htm" />
+  <HelpKINode Title="M property" Url="html/P_CPlan_SRP_Client_Carrier_M.htm" />
+  <HelpKINode Title="M property" Url="html/P_CPlan_SRP_Host_Carrier_M.htm" />
   <HelpKINode Title="M2 method" Url="html/M_CPlan_SRP_Client_Functional_M2.htm" />
+  <HelpKINode Title="M2 property" Url="html/P_CPlan_SRP_Client_Carrier_M2.htm" />
+  <HelpKINode Title="M2 property" Url="html/P_CPlan_SRP_Host_Carrier_M2.htm" />
+  <HelpKINode Title="N property" Url="html/P_CPlan_SRP_Client_Carrier_N.htm" />
+  <HelpKINode Title="N property" Url="html/P_CPlan_SRP_Host_Carrier_N.htm" />
   <HelpKINode Title="N1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_N1024Bit.htm" />
   <HelpKINode Title="N1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_N1536Bit.htm" />
   <HelpKINode Title="N2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_N2048Bit.htm" />
@@ -98,6 +163,8 @@
   <HelpKINode Title="N4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_N4096Bit.htm" />
   <HelpKINode Title="N6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_N6144Bit.htm" />
   <HelpKINode Title="N8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_N8192Bit.htm" />
+  <HelpKINode Title="Password property" Url="html/P_CPlan_SRP_Client_Carrier_Password.htm" />
+  <HelpKINode Title="Password property" Url="html/P_CPlan_SRP_Host_Carrier_Password.htm" />
   <HelpKINode Title="prime1024Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime1024Bit.htm" />
   <HelpKINode Title="prime1536Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime1536Bit.htm" />
   <HelpKINode Title="prime2048Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime2048Bit.htm" />
@@ -105,6 +172,11 @@
   <HelpKINode Title="prime4096Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime4096Bit.htm" />
   <HelpKINode Title="prime6144Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime6144Bit.htm" />
   <HelpKINode Title="prime8192Bit field" Url="html/F_CPlan_SRP_Client_Constants_prime8192Bit.htm" />
-  <HelpKINode Title="sha field" Url="html/F_CPlan_SRP_Client_Functional_sha.htm" />
+  <HelpKINode Title="S property" Url="html/P_CPlan_SRP_Client_Carrier_S.htm" />
+  <HelpKINode Title="S property" Url="html/P_CPlan_SRP_Host_Carrier_S.htm" />
+  <HelpKINode Title="salt property" Url="html/P_CPlan_SRP_Host_Carrier_salt.htm" />
+  <HelpKINode Title="UserName property" Url="html/P_CPlan_SRP_Client_Carrier_UserName.htm" />
+  <HelpKINode Title="UserName property" Url="html/P_CPlan_SRP_Host_Carrier_UserName.htm" />
+  <HelpKINode Title="v property" Url="html/P_CPlan_SRP_Host_Carrier_v.htm" />
   <HelpKINode Title="XorArrays method" Url="html/M_CPlan_SRP_Client_Functional_XorArrays.htm" />
 </HelpKI>

@@ -1,5 +1,5 @@
 ﻿/* Connection Planet - SRP6a Implementation
- * Copyright (C) 2013  MusicDemon
+ * Copyright (C) 2013  MusicDemon (http://www.connectionplanet.nl)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,6 +23,7 @@ using System.Text;
 using System.Linq;
 using System.Net.Sockets;
 using System.Numerics;
+using CPlan.SRP.Client;
 using C = CPlan.SRP.Client.Functional;
 
 namespace CPlan.UI
@@ -34,14 +35,10 @@ namespace CPlan.UI
         TcpClient c;
         public volatile bool run;
 
-        BigInteger N = CPlan.SRP.Client.Constants.N1024Bit; // We will be using a default 1024-bit prime.
-        BigInteger g = CPlan.SRP.Client.Constants.g1024Bit;
+        BigInteger N = Constants.N1024Bit; // We will be using a default 1024-bit prime.
+        BigInteger g = Constants.g1024Bit;
 
-        BigInteger a, A, B, k, S;
-        byte[] salt = new byte[16];
-        byte[] K;
-        byte[] M;
-        byte[] M2 = new byte[] { };
+        Carrier carrier = new Carrier("MusicDemon", "123Test123");
 
         public Client(string userName, string password)
         {
@@ -56,15 +53,10 @@ namespace CPlan.UI
         {
             int stage = 0; // Used to check which packet is coming in.
 
-            
-            a = C.Geta();
-            A = C.CalcA(a, g, N);
-            k = C.Calck(g, N);
-
             if (c.Connected)
             {
                 // Send user name and A when connected to the server.
-                c.Client.Send(Encoding.UTF8.GetBytes("MusicDemon").Concat(A.ToByteArray()).ToArray());
+                c.Client.Send(Encoding.UTF8.GetBytes("MusicDemon").Concat(carrier.A.ToByteArray()).ToArray());
 
                 while (run)
                 {
@@ -76,18 +68,14 @@ namespace CPlan.UI
                         switch (stage)
                         {
                             case 0:
-                                salt = data.Take(16).ToArray(); // Extract the salt.
-                                B = new BigInteger(data.Skip(16).ToArray()); // Extract the B. 
-                                if ((B % N) == 0) { c.Close(); c = null; run = false; return; } // Close the whole thing down when B % N = 0.
-                                S = C.CalcS(a, B, k, C.Calcx(salt, "MusicDemon", "123Test123?"), C.Calcu(A, B, N), g, N); // Calculate S.
-                                K = C.CalcK(S); // Calculate K.
-                                M = C.M("MusicDemon", salt, A, B, K, g, N); // Calculate M.
-                                M2 = C.M2(A, M, K); // Calculate M2.
-                                c.Client.Send(M); // Send M.
+                                byte[] salt = data.Take(16).ToArray(); // Extract the salt.
+                                BigInteger B = new BigInteger(data.Skip(16).ToArray()); // Extract the B. 
+                                carrier.CalculateEverthing(salt, B);
+                                c.Client.Send(carrier.M); // Send M.
                                 stage++;
                                 break;
                             case 1:
-                                if (C.CompareArrays(data, M2))
+                                if (C.CompareArrays(data, carrier.M2))
                                 {
                                     // Yea!! M2 is equal to the server M2. 
                                     c.Client.Send(new byte[] { 0 });

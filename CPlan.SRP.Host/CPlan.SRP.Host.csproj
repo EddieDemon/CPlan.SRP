@@ -38,6 +38,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrier.cs" />
     <Compile Include="Functional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

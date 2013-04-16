@@ -1,5 +1,5 @@
 ﻿/* Connection Planet - SRP6a Implementation
- * Copyright (C) 2013  MusicDemon
+ * Copyright (C) 2013  MusicDemon (http://www.connectionplanet.nl)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

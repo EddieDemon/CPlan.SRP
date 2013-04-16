@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="1.9.6.0" projectFile="M:\Visual Studio\Projects\CPlan.SRP\Documentation\Documentation.shfbproj" started="25-3-2013 23:40:58">
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.6.0" projectFile="M:\Visual Studio\Projects\CPlan.SRP\Documentation\Documentation.shfbproj" started="13-4-2013 11:10:27">
 <buildStep step="Initializing">
 Finding tools...
 Found Sandcastle tools in &#39;C:\Program Files (x86)\Sandcastle\&#39;
@@ -28,11 +28,11 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0100
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
@@ -42,14 +42,14 @@ Adding Script# AfterGenerateRefInfo tasks
   MRefBuilder (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Loaded 2 assemblies for reflection and 1 dependency assemblies.
-  Info: Wrote information on 2 namespaces, 3 types, and 40 members
+  Info: Wrote information on 2 namespaces, 5 types, and 67 members
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\FixScriptSharp.xsl&#39;.
-    Last step completed in 00:00:00.8268
+    Last step completed in 00:00:00.9060
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
@@ -62,7 +62,7 @@ Applying visibility properties to reflection information file
     0 local and base class EII elements removed
     0 inherited member elements removed
     0 event backer fields noted for removal
-    Last step completed in 00:00:00.0624
+    Last step completed in 00:00:00.0800
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
@@ -74,11 +74,12 @@ Transforming reflection output...
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-    Last step completed in 00:00:00.5460
+    Last step completed in 00:00:00.6600
 </buildStep>
 <buildStep step="ModifyHelpTopicFilenames">
 Modifying help topic filenames in reflection information file
-    Last step completed in 00:00:00.0156
+    Unique name M_CPlan_SRP_Client_Carrier__ctor_1 generated for M:CPlan.SRP.Client.Carrier.#ctor(System.String,System.String,System.Byte[],System.Numerics.BigInteger,System.Numerics.BigInteger)
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="CopyStandardContent">
 Copying standard help content...
@@ -276,7 +277,7 @@ C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding -&gt; M:\Visual 
     C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-instrumentedLink.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-instrumentedLink.xslt
     C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-languageSpecificText.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-languageSpecificText.xslt
     C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-codesnippet.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-codesnippet.xslt
-    Last step completed in 00:00:00.0936
+    Last step completed in 00:00:00.1000
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -294,19 +295,19 @@ Generating intermediate table of contents file...
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.1716
+    Last step completed in 00:00:00.2100
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0100
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\sandcastle.config
     Added configuration for &#39;API Token Resolution&#39; before &#39;Show Missing Documentation Component&#39; (instance 1)
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
-    Last step completed in 00:00:00.0468
+    Last step completed in 00:00:00.0700
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
@@ -315,8 +316,8 @@ Building reference help topics...
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Loading configuration...
   Info: Processing topics...
-  Info: Processed 52 topics
-    Last step completed in 00:00:25.3904
+  Info: Processed 90 topics
+    Last step completed in 00:00:29.9330
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
@@ -334,11 +335,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website
-Processed 51 HTML files
+Processed 89 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\WebKI.xml
 Saving website table of contents to M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\WebTOC.xml
-    Last step completed in 00:00:00.2400
+    Last step completed in 00:00:00.3800
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -347,14 +348,14 @@ Generating website table of contents file...
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.1200
+    Last step completed in 00:00:00.2000
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 100 files
-Copied 146 files for the website content
-    Last step completed in 00:00:00.0800
+Copied 184 files for the website content
+    Last step completed in 00:00:00.1200
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
@@ -362,7 +363,7 @@ Removing intermediate files...
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 03-25-2013 11:41 .  Total time: 00:00:27,7568
+Build completed successfully at 04-13-2013 11:11 .  Total time: 00:00:32,8021
 
 </buildStep>
 </shfbBuild>

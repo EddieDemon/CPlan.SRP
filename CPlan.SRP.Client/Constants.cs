@@ -1,5 +1,5 @@
 ﻿/* Connection Planet - SRP6a Implementation
- * Copyright (C) 2013  MusicDemon
+ * Copyright (C) 2013  MusicDemon (http://www.connectionplanet.nl)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,9 @@ using System.Numerics;
 namespace CPlan.SRP.Client
 {
     // Snippets used from http://channel9.msdn.com/forums/sandbox/secure-remote-password-srp-in-wse.
-
+    /// <summary>
+    /// Represents varia of N and g values.
+    /// </summary>
     public static class Constants
     {
         // Various N's sizes in Base64. These are the supported bit sizes.  We use on 1024 bit for now, but any of the following can be used.
@@ -99,5 +101,63 @@ namespace CPlan.SRP.Client
         /// Generator modulo N for 8192 bit N.
         /// </summary>
         public static readonly BigInteger g8192Bit = new BigInteger(19);
+
+        /// <summary>
+        /// Gets a large prime and a generator.
+        /// </summary>
+        /// <param name="size">The bit size of the large prime.</param>
+        /// <param name="N">The large prime.</param>
+        /// <param name="g">The generator.</param>
+        public void GetNandg(KeySizes size, out BigInteger N, out BigInteger g)
+        {
+            switch (size)
+            {
+                case KeySizes._1024:
+                    N = N1024Bit;
+                    g = g1024Bit;
+                    break;
+                case KeySizes._1536:
+                    N = N1024Bit;
+                    g = g1024Bit;
+                    break;
+                case KeySizes._2048:
+                    N = N1536Bit;
+                    g = g1536Bit;
+                    break;
+                case KeySizes._3072:
+                    N = N3072Bit;
+                    g = g3072Bit;
+                    break;
+                case KeySizes._4096:
+                    N = N4096Bit;
+                    g = g4096Bit;
+                    break;
+                case KeySizes._6144:
+                    N = N6144Bit;
+                    g = g6144Bit;
+                    break;
+                case KeySizes._8192:
+                    N = N8192Bit;
+                    g = g8192Bit;
+                    break;
+                default:
+                    N = N1024Bit;
+                    g = g1024Bit;
+                    break;
+            }
+        }
+    }
+    /// <summary>
+    /// Represents the length of a key.
+    /// </summary>
+    public enum KeySizes
+    {
+        _1024 = 1024,
+        _1536 = 1536,
+        _2048 = 2048,
+        _3072 = 3072,
+        _4096 = 4096,
+        _6144 = 6144,
+        _8192 = 8192,
     }
 }

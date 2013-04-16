@@ -1,5 +1,5 @@
 ﻿/* Connection Planet - SRP6a Implementation
- * Copyright (C) 2013  MusicDemon
+ * Copyright (C) 2013  MusicDemon (http://www.connectionplanet.nl)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,6 +24,9 @@ using System.Security.Cryptography;
 
 namespace CPlan.SRP.Client
 {
+    /// <summary>
+    /// Represents a set of functions for the SRP protocol.
+    /// </summary>
     public static class Functional
     {
         /// <summary>

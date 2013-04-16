@@ -1,11 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="ff7ce24d-f7ce-465f-988c-aee297e077ac" Title="CPlan.SRP.Client Namespace" Url="html/N_CPlan_SRP_Client.htm">
-    <HelpTOCNode Id="03f9af0d-269f-4d4b-b51e-d9a9e6c9906a" Title="Constants Class" Url="html/T_CPlan_SRP_Client_Constants.htm">
+  <HelpTOCNode Id="a2c0f3be-2bbf-4f76-9297-1bcfd588229c" Title="CPlan.SRP.Client Namespace" Url="html/N_CPlan_SRP_Client.htm">
+    <HelpTOCNode Id="b860c26b-d962-4d96-abf3-e14b2510dea4" Title="Carrier Class" Url="html/T_CPlan_SRP_Client_Carrier.htm">
+      <HelpTOCNode Title="Carrier Members" Url="html/AllMembers_T_CPlan_SRP_Client_Carrier.htm" />
+      <HelpTOCNode Id="a079c469-9de5-4c6a-b265-3a2afbeea6b1" Title="Carrier Constructor " Url="html/Overload_CPlan_SRP_Client_Carrier__ctor.htm">
+        <HelpTOCNode Title="Carrier Constructor (String, String)" Url="html/M_CPlan_SRP_Client_Carrier__ctor.htm" />
+        <HelpTOCNode Title="Carrier Constructor (String, String, Byte[], BigInteger, BigInteger)" Url="html/M_CPlan_SRP_Client_Carrier__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2822a968-51d5-47bd-91a5-961aaab2117d" Title="Carrier Fields" Url="html/Fields_T_CPlan_SRP_Client_Carrier.htm">
+        <HelpTOCNode Title="a Field" Url="html/F_CPlan_SRP_Client_Carrier_a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1ec7639a-be73-4ce5-861a-d8778c94a199" Title="Carrier Methods" Url="html/Methods_T_CPlan_SRP_Client_Carrier.htm">
+        <HelpTOCNode Title="CalculateEverthing Method " Url="html/M_CPlan_SRP_Client_Carrier_CalculateEverthing.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="659eff53-b166-4934-ac7d-0ad8cddc9a18" Title="Carrier Properties" Url="html/Properties_T_CPlan_SRP_Client_Carrier.htm">
+        <HelpTOCNode Title="A Property " Url="html/P_CPlan_SRP_Client_Carrier_A.htm" />
+        <HelpTOCNode Title="g Property " Url="html/P_CPlan_SRP_Client_Carrier_g.htm" />
+        <HelpTOCNode Title="K Property " Url="html/P_CPlan_SRP_Client_Carrier_K.htm" />
+        <HelpTOCNode Title="M Property " Url="html/P_CPlan_SRP_Client_Carrier_M.htm" />
+        <HelpTOCNode Title="M2 Property " Url="html/P_CPlan_SRP_Client_Carrier_M2.htm" />
+        <HelpTOCNode Title="N Property " Url="html/P_CPlan_SRP_Client_Carrier_N.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/P_CPlan_SRP_Client_Carrier_Password.htm" />
+        <HelpTOCNode Title="S Property " Url="html/P_CPlan_SRP_Client_Carrier_S.htm" />
+        <HelpTOCNode Title="UserName Property " Url="html/P_CPlan_SRP_Client_Carrier_UserName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="42bcef48-9dc6-476b-a5c0-d94cb368925e" Title="Constants Class" Url="html/T_CPlan_SRP_Client_Constants.htm">
       <HelpTOCNode Title="Constants Members" Url="html/AllMembers_T_CPlan_SRP_Client_Constants.htm" />
       <HelpTOCNode Title="Constants Constructor " Url="html/M_CPlan_SRP_Client_Constants__cctor.htm" />
-      <HelpTOCNode Id="f372a18c-c316-4bef-ac5e-a0c6d91ca7cd" Title="Constants Fields" Url="html/Fields_T_CPlan_SRP_Client_Constants.htm">
+      <HelpTOCNode Id="901762ee-dcb2-409f-b6b0-174d03cdfe52" Title="Constants Fields" Url="html/Fields_T_CPlan_SRP_Client_Constants.htm">
         <HelpTOCNode Title="g1024Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g1024Bit.htm" />
         <HelpTOCNode Title="g1536Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g1536Bit.htm" />
         <HelpTOCNode Title="g2048Bit Field" Url="html/F_CPlan_SRP_Client_Constants_g2048Bit.htm" />
@@ -29,13 +53,13 @@
         <HelpTOCNode Title="prime8192Bit Field" Url="html/F_CPlan_SRP_Client_Constants_prime8192Bit.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="89fa2b9e-c735-4d10-92c3-da849c65e11e" Title="Functional Class" Url="html/T_CPlan_SRP_Client_Functional.htm">
+    <HelpTOCNode Id="7086fe81-4140-417b-b62b-43b303e85ef3" Title="Functional Class" Url="html/T_CPlan_SRP_Client_Functional.htm">
       <HelpTOCNode Title="Functional Members" Url="html/AllMembers_T_CPlan_SRP_Client_Functional.htm" />
       <HelpTOCNode Title="Functional Constructor " Url="html/M_CPlan_SRP_Client_Functional__cctor.htm" />
-      <HelpTOCNode Id="ce87239c-f723-4887-a3d0-3487a4f4c63c" Title="Functional Fields" Url="html/Fields_T_CPlan_SRP_Client_Functional.htm">
-        <HelpTOCNode Title="sha Field" Url="html/F_CPlan_SRP_Client_Functional_sha.htm" />
+      <HelpTOCNode Id="faa7528c-86d3-4990-8144-d2847bddc8fb" Title="Functional Fields" Url="html/Fields_T_CPlan_SRP_Client_Functional.htm">
+        <HelpTOCNode Title="algorithm Field" Url="html/F_CPlan_SRP_Client_Functional_algorithm.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="932ee244-e731-4288-b09a-3d8d2368b4c4" Title="Functional Methods" Url="html/Methods_T_CPlan_SRP_Client_Functional.htm">
+      <HelpTOCNode Id="c18396ec-48ac-48bd-a6e8-8fd2520dd51a" Title="Functional Methods" Url="html/Methods_T_CPlan_SRP_Client_Functional.htm">
         <HelpTOCNode Title="CalcA Method " Url="html/M_CPlan_SRP_Client_Functional_CalcA.htm" />
         <HelpTOCNode Title="M:CPlan.SRP.Client.Functional.Calck(System.Numerics.BigInteger,System.Numerics.BigInteger)" Url="" />
         <HelpTOCNode Title="Calck Method " Url="html/M_CPlan_SRP_Client_Functional_CalcK.htm" />
@@ -52,10 +76,33 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="f02126f5-4add-4808-b843-dcced4fdc30e" Title="CPlan.SRP.Host Namespace" Url="html/N_CPlan_SRP_Host.htm">
-    <HelpTOCNode Id="8a43b180-d9f5-4be0-b35e-6356c0124939" Title="Functional Class" Url="html/T_CPlan_SRP_Host_Functional.htm">
+  <HelpTOCNode Id="e865b1f1-c178-4ebd-860e-8e41701cd054" Title="CPlan.SRP.Host Namespace" Url="html/N_CPlan_SRP_Host.htm">
+    <HelpTOCNode Id="ac5f0322-bd48-4f7a-b2f7-69c4f975808c" Title="Carrier Class" Url="html/T_CPlan_SRP_Host_Carrier.htm">
+      <HelpTOCNode Title="Carrier Members" Url="html/AllMembers_T_CPlan_SRP_Host_Carrier.htm" />
+      <HelpTOCNode Title="Carrier Constructor " Url="html/M_CPlan_SRP_Host_Carrier__ctor.htm" />
+      <HelpTOCNode Id="54a1adf7-0729-4591-803e-b8138668f6bb" Title="Carrier Fields" Url="html/Fields_T_CPlan_SRP_Host_Carrier.htm">
+        <HelpTOCNode Title="b Field" Url="html/F_CPlan_SRP_Host_Carrier_b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="54f72057-664e-4d80-94bb-8796710f8594" Title="Carrier Methods" Url="html/Methods_T_CPlan_SRP_Host_Carrier.htm">
+        <HelpTOCNode Title="CalculateEverthing Method " Url="html/M_CPlan_SRP_Host_Carrier_CalculateEverthing.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9adc6ffd-9abd-48f7-aa47-4141f9b86201" Title="Carrier Properties" Url="html/Properties_T_CPlan_SRP_Host_Carrier.htm">
+        <HelpTOCNode Title="B Property " Url="html/P_CPlan_SRP_Host_Carrier_B.htm" />
+        <HelpTOCNode Title="g Property " Url="html/P_CPlan_SRP_Host_Carrier_g.htm" />
+        <HelpTOCNode Title="K Property " Url="html/P_CPlan_SRP_Host_Carrier_K.htm" />
+        <HelpTOCNode Title="M Property " Url="html/P_CPlan_SRP_Host_Carrier_M.htm" />
+        <HelpTOCNode Title="M2 Property " Url="html/P_CPlan_SRP_Host_Carrier_M2.htm" />
+        <HelpTOCNode Title="N Property " Url="html/P_CPlan_SRP_Host_Carrier_N.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/P_CPlan_SRP_Host_Carrier_Password.htm" />
+        <HelpTOCNode Title="S Property " Url="html/P_CPlan_SRP_Host_Carrier_S.htm" />
+        <HelpTOCNode Title="salt Property " Url="html/P_CPlan_SRP_Host_Carrier_salt.htm" />
+        <HelpTOCNode Title="UserName Property " Url="html/P_CPlan_SRP_Host_Carrier_UserName.htm" />
+        <HelpTOCNode Title="v Property " Url="html/P_CPlan_SRP_Host_Carrier_v.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="557f6a6a-5736-4fc2-a079-8b53f6175d50" Title="Functional Class" Url="html/T_CPlan_SRP_Host_Functional.htm">
       <HelpTOCNode Title="Functional Members" Url="html/AllMembers_T_CPlan_SRP_Host_Functional.htm" />
-      <HelpTOCNode Id="3bbcf517-d9ef-4218-9feb-0ec029b58d7c" Title="Functional Methods" Url="html/Methods_T_CPlan_SRP_Host_Functional.htm">
+      <HelpTOCNode Id="2c38623d-30f6-4b45-a45e-3029aed959e7" Title="Functional Methods" Url="html/Methods_T_CPlan_SRP_Host_Functional.htm">
         <HelpTOCNode Title="CalcB Method " Url="html/M_CPlan_SRP_Host_Functional_CalcB.htm" />
         <HelpTOCNode Title="CalcS Method " Url="html/M_CPlan_SRP_Host_Functional_CalcS.htm" />
         <HelpTOCNode Title="Getb Method " Url="html/M_CPlan_SRP_Host_Functional_Getb.htm" />
