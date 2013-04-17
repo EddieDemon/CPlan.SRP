@@ -108,7 +108,7 @@ namespace CPlan.SRP.Client
         /// <param name="size">The bit size of the large prime.</param>
         /// <param name="N">The large prime.</param>
         /// <param name="g">The generator.</param>
-        public void GetNandg(KeySizes size, out BigInteger N, out BigInteger g)
+        public static void GetNandg(KeySizes size, out BigInteger N, out BigInteger g)
         {
             switch (size)
             {

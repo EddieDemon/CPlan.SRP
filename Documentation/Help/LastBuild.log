@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="1.9.6.0" projectFile="M:\Visual Studio\Projects\CPlan.SRP\Documentation\Documentation.shfbproj" started="13-4-2013 11:10:27">
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.6.0" projectFile="C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Documentation.shfbproj" started="17-4-2013 8:47:31">
 <buildStep step="Initializing">
 Finding tools...
-Found Sandcastle tools in &#39;C:\Program Files (x86)\Sandcastle\&#39;
+Found Sandcastle tools in &#39;C:\Program Files\Sandcastle\&#39;
 Loading and initializing plug-ins...
 Script# Reflection File Fixer Version 1.9.6.0
 Copyright &#169; 2006-2012, Eric Woodruff, All Rights Reserved
 Script# is Copyright &#169; 2007-2009 Nikhil Kothari, All Rights Reserved
 </buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+</buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
-Source: M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Client\CPlan.SRP.Client.csproj
-    Found project &#39;M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Client\CPlan.SRP.Client.csproj&#39;
-Source: M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Host\CPlan.SRP.Host.csproj
-    Found project &#39;M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Host\CPlan.SRP.Host.csproj&#39;
+Source: C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\CPlan.SRP.Client\CPlan.SRP.Client.csproj
+    Found project &#39;C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\CPlan.SRP.Client\CPlan.SRP.Client.csproj&#39;
+Source: C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\CPlan.SRP.Host\CPlan.SRP.Host.csproj
+    Found project &#39;C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\CPlan.SRP.Host\CPlan.SRP.Host.csproj&#39;
 
 Parsing project files
-    Found assembly &#39;M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Client\bin\Debug\CPlan.SRP.Client.dll&#39;
-    Found assembly &#39;M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Host\bin\Debug\CPlan.SRP.Host.dll&#39;
+    Found assembly &#39;C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\CPlan.SRP.Client\bin\Release\CPlan.SRP.Client.dll&#39;
+    Found assembly &#39;C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\CPlan.SRP.Host\bin\Release\CPlan.SRP.Host.dll&#39;
 
 References to include (excluding framework assemblies):
     None
-
-Copying XML comments files
-    M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Client\bin\Debug\CPlan.SRP.Client.XML -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\CPlan.SRP.Client.XML
-    M:\Visual Studio\Projects\CPlan.SRP\CPlan.SRP.Host\bin\Debug\CPlan.SRP.Host.XML -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\CPlan.SRP.Host.XML
+SHFB: Warning BE0062: No XML comments files found.  The help file will not contain any member comments.
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.4160
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0100
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 <plugIn name="Script# Reflection File Fixer" behavior="Before" priority="1000">
 Adding Script# AfterGenerateRefInfo tasks
-</plugIn>[C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+</plugIn>[c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
   MRefBuilder (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
-  Info: Loaded 2 assemblies for reflection and 1 dependency assemblies.
-  Info: Wrote information on 2 namespaces, 5 types, and 67 members
+  Info: Loaded 2 assemblies for reflection and 0 dependency assemblies.
+  Info: Wrote information on 2 namespaces, 6 types, and 74 members
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
-  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
+  Info: Applying XSL transformation &#39;C:\Program Files\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
-  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\FixScriptSharp.xsl&#39;.
-    Last step completed in 00:00:00.9060
+  Info: Applying XSL transformation &#39;C:\Program Files\Sandcastle\ProductionTransforms\FixScriptSharp.xsl&#39;.
+    Last step completed in 00:00:03.9132
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0780
 </buildStep>
 <buildStep step="ApplyVisibilityProperties">
 Applying visibility properties to reflection information file
@@ -62,227 +62,226 @@ Applying visibility properties to reflection information file
     0 local and base class EII elements removed
     0 inherited member elements removed
     0 event backer fields noted for removal
-    Last step completed in 00:00:00.0800
+    Last step completed in 00:00:00.2510
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
-[C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+[c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
-  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
-  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\AddGuidFilenames.xsl&#39;.
+  Info: Applying XSL transformation &#39;C:\Program Files\Sandcastle\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Info: Applying XSL transformation &#39;C:\Program Files\Sandcastle\ProductionTransforms\AddGuidFilenames.xsl&#39;.
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
-  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-    Last step completed in 00:00:00.6600
+  Info: Applying XSL transformation &#39;C:\Program Files\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+    Last step completed in 00:00:03.2252
 </buildStep>
 <buildStep step="ModifyHelpTopicFilenames">
 Modifying help topic filenames in reflection information file
-    Unique name M_CPlan_SRP_Client_Carrier__ctor_1 generated for M:CPlan.SRP.Client.Carrier.#ctor(System.String,System.String,System.Byte[],System.Numerics.BigInteger,System.Numerics.BigInteger)
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.3480
 </buildStep>
 <buildStep step="CopyStandardContent">
 Copying standard help content...
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\1_404_bullet.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\1_404_bullet.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\2_404_bullet.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\2_404_bullet.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\alert_caution.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\alert_caution.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\alert_note.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\alert_note.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\alert_security.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\alert_security.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\CFW.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\CFW.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\close.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\close.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\favicon.ico -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\favicon.ico
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\footer_slice.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\footer_slice.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\info_icon.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\info_icon.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\note.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\note.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\online_icon.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\online_icon.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\open.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\open.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pencil.GIF -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pencil.GIF
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privclass.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privclass.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privdelegate.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privdelegate.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privenumeration.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privenumeration.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privevent.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privevent.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privextension.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privextension.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privfield.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privfield.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privinterface.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privinterface.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privmethod.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privmethod.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privproperty.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privproperty.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\privstructure.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privstructure.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protclass.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protclass.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protdelegate.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protdelegate.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protenumeration.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protenumeration.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protevent.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protevent.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protextension.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protextension.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protfield.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protfield.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protinterface.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protinterface.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protmethod.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protmethod.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protoperator.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protoperator.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protproperty.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protproperty.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\protstructure.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protstructure.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubclass.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubclass.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubdelegate.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubdelegate.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubenumeration.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubenumeration.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubevent.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubevent.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubextension.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubextension.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubfield.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubfield.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubinterface.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubinterface.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubmethod.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubmethod.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\puboperator.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\puboperator.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubproperty.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubproperty.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\pubstructure.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubstructure.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\search.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\search.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\search_bk.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\search_bk.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\security.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\security.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\slMobile.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\slMobile.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\static.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\static.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\tabLeftBG.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\tabLeftBG.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\tabRightBG.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\tabRightBG.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\ui_om_collapse.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\ui_om_collapse.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\ui_om_expand.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\ui_om_expand.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\icons\xna.gif -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\xna.gif
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\scripts\branding.js -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\scripts\branding.js
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-cs-CZ.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-cs-CZ.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-de-DE.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-de-DE.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-en-US.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-en-US.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-es-ES.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-es-ES.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-fr-FR.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-fr-FR.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-it-IT.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-it-IT.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-ja-JP.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-ja-JP.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-ko-KR.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-ko-KR.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-pl-PL.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-pl-PL.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-pt-BR.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-pt-BR.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-ru-RU.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-ru-RU.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-tr-TR.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-tr-TR.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-zh-CN.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-zh-CN.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding-zh-TW.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-zh-TW.css
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\styles\branding.css -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\1_404_bullet.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\1_404_bullet.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\2_404_bullet.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\2_404_bullet.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\alert_caution.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\alert_caution.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\alert_note.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\alert_note.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\alert_security.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\alert_security.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\CFW.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\close.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\close.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\favicon.ico -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\footer_slice.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\footer_slice.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\info_icon.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\info_icon.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\note.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\note.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\online_icon.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\online_icon.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\open.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\open.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pencil.GIF -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pencil.GIF
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privclass.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privdelegate.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privenumeration.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privevent.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privextension.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privfield.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privinterface.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privmethod.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privproperty.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\privstructure.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protclass.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protdelegate.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protenumeration.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protevent.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protextension.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protfield.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protinterface.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protmethod.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protoperator.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protproperty.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\protstructure.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubclass.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubdelegate.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubenumeration.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubevent.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubextension.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubfield.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubinterface.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubmethod.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\puboperator.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubproperty.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\pubstructure.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\search.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\search.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\search_bk.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\search_bk.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\security.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\security.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\slMobile.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\static.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\static.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\tabLeftBG.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\tabLeftBG.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\tabRightBG.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\tabRightBG.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\ui_om_collapse.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\ui_om_collapse.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\ui_om_expand.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\ui_om_expand.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\icons\xna.gif -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files\Sandcastle\\Presentation\VS2010\scripts\branding.js -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-cs-CZ.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-de-DE.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-en-US.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-es-ES.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-fr-FR.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-it-IT.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-ja-JP.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-ko-KR.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-pl-PL.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-pt-BR.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-ru-RU.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-tr-TR.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-zh-CN.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding-zh-TW.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files\Sandcastle\\Presentation\VS2010\styles\branding.css -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\styles\branding.css
 Copying help branding...
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\branding\
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/body.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\body.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/head.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\head.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/CodeSnippet.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\CodeSnippet.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-zh-TW.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/Identity.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\Identity.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/InstrumentedLink.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\InstrumentedLink.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-zh-TW.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/LanguageSpecificText.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\LanguageSpecificText.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-zh-TW.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\index-zh-TW.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\search-zh-TW.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\toc-zh-TW.xslt
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website\branding\
-C:\Program Files (x86)\Sandcastle\\Presentation\VS2010\branding -&gt; M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding.xml -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding.xml
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-cs-CZ.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-cs-CZ.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-de-DE.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-de-DE.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-en-US.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-en-US.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-es-ES.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-es-ES.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-fr-FR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-fr-FR.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-it-IT.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-it-IT.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-ja-JP.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-ja-JP.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-ko-KR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-ko-KR.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-pl-PL.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-pl-PL.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-pt-BR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-pt-BR.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-ru-RU.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-ru-RU.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-tr-TR.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-tr-TR.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-zh-CN.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-zh-CN.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\branding-zh-TW.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\branding-zh-TW.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-body.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-body.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-head.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-head.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-foot.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-foot.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-collapsibleArea.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-collapsibleArea.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-instrumentedLink.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-instrumentedLink.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-languageSpecificText.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-languageSpecificText.xslt
-    C:\Program Files (x86)\Sandcastle\Presentation\VS2010\branding\ps-codesnippet.xslt -> M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\branding\ps-codesnippet.xslt
-    Last step completed in 00:00:00.1000
+C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\branding\
+C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/body.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\body.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/head.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\head.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/CodeSnippet.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\CodeSnippet.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-cs-CZ.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-de-DE.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-en-US.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-es-ES.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-fr-FR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-it-IT.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-ja-JP.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-ko-KR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-pl-PL.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-pt-BR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-ru-RU.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-tr-TR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-zh-CN.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/codesnippet-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\codesnippet-zh-TW.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/Identity.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\Identity.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/InstrumentedLink.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\InstrumentedLink.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-cs-CZ.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-de-DE.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-en-US.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-es-ES.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-fr-FR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-it-IT.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-ja-JP.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-ko-KR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-pl-PL.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-pt-BR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-ru-RU.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-tr-TR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-zh-CN.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/instrumentedlink-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\instrumentedlink-zh-TW.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/LanguageSpecificText.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\LanguageSpecificText.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-cs-CZ.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-de-DE.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-en-US.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-es-ES.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-fr-FR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-it-IT.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-ja-JP.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-ko-KR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-pl-PL.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-pt-BR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-ru-RU.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-tr-TR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-zh-CN.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/MultiViewTable-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\MultiViewTable-zh-TW.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-cs-CZ.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-de-DE.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-en-US.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-es-ES.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-fr-FR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-it-IT.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-ja-JP.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-ko-KR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-pl-PL.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-pt-BR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-ru-RU.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-tr-TR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-zh-CN.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/index-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\index-zh-TW.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-cs-CZ.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-de-DE.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-en-US.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-es-ES.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-fr-FR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-it-IT.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-ja-JP.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-ko-KR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-pl-PL.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-pt-BR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-ru-RU.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-tr-TR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-zh-CN.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/search-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\search-zh-TW.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-cs-CZ.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-de-DE.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-en-US.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-es-ES.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-fr-FR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-it-IT.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-ja-JP.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-ko-KR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-pl-PL.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-pt-BR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-ru-RU.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-tr-TR.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-zh-CN.xslt
+    C:\Program Files\Sandcastle\\Presentation\VS2010\branding\dev10.mshc/toc-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\toc-zh-TW.xslt
+C:\Program Files\Sandcastle\\Presentation\VS2010\branding -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website\branding\
+C:\Program Files\Sandcastle\\Presentation\VS2010\branding -&gt; C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding.xml -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding.xml
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-cs-CZ.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-cs-CZ.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-de-DE.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-de-DE.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-en-US.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-en-US.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-es-ES.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-es-ES.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-fr-FR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-fr-FR.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-it-IT.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-it-IT.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-ja-JP.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-ja-JP.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-ko-KR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-ko-KR.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-pl-PL.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-pl-PL.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-pt-BR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-pt-BR.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-ru-RU.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-ru-RU.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-tr-TR.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-tr-TR.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-zh-CN.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-zh-CN.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\branding-zh-TW.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\branding-zh-TW.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-body.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-body.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-head.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-head.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-foot.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-foot.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-collapsibleArea.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-collapsibleArea.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-instrumentedLink.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-instrumentedLink.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-languageSpecificText.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-languageSpecificText.xslt
+    C:\Program Files\Sandcastle\Presentation\VS2010\branding\ps-codesnippet.xslt -> C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\branding\ps-codesnippet.xslt
+    Last step completed in 00:00:15.8629
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0050
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -290,80 +289,80 @@ Merging conceptual and additional tables of contents...
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
-[C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+[c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
   XslTransform (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
-  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
+  Info: Applying XSL transformation &#39;C:\Program Files\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.2100
+    Last step completed in 00:00:01.0891
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0100
+    Last step completed in 00:00:00.1630
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
-M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\sandcastle.config
+C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\sandcastle.config
     Added configuration for &#39;API Token Resolution&#39; before &#39;Show Missing Documentation Component&#39; (instance 1)
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
-    Last step completed in 00:00:00.0700
+    Last step completed in 00:00:00.3490
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
-[C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+[c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
   BuildAssembler (v2.7.2.0)
   Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
   Info: Loading configuration...
   Info: Processing topics...
-  Info: Processed 90 topics
-    Last step completed in 00:00:29.9330
+  Info: Processed 91 topics
+    Last step completed in 00:01:59.8929
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.0300
+    Last step completed in 00:00:02.2371
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
-[C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
+[c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
 Sandcastle Help File Builder, version 1.9.6.0
 Copyright &#184; 2006-2012, Eric Woodruff, All Rights Reserved
 E-Mail: Eric@EWoodruff.us
 
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
-Processing website files in M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\Output\Website
-Processed 89 HTML files
+Processing website files in C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\Output\Website
+Processed 90 HTML files
 Sorting keywords and generating See Also indices
-Saving website keyword index to M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\WebKI.xml
-Saving website table of contents to M:\Visual Studio\Projects\CPlan.SRP\Documentation\Help\Working\WebTOC.xml
-    Last step completed in 00:00:00.3800
+Saving website keyword index to C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\WebKI.xml
+Saving website table of contents to C:\Users\MusicDemon\Documents\GitHub\CPlan.SRP\Documentation\Help\Working\WebTOC.xml
+    Last step completed in 00:00:04.5373
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.2000
+    Last step completed in 00:00:04.3372
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 100 files
-Copied 184 files for the website content
-    Last step completed in 00:00:00.1200
+Copied 186 files for the website content
+    Last step completed in 00:00:28.0956
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0400
+    Last step completed in 00:00:06.6784
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 04-13-2013 11:11 .  Total time: 00:00:32,8021
+Build completed successfully at 04-17-2013 08:50 .  Total time: 00:03:11,6460
 
 </buildStep>
 </shfbBuild>
