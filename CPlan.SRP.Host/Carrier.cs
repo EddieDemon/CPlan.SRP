@@ -94,9 +94,9 @@ namespace CPlan.SRP.Host
         /// <param name="A">The public client value.</param>
         public void CalculateEverthing(BigInteger A)
         {
-            if ((A % N) == 0) { throw new ArgumentException("A modulo N (A % N) equals 0, this is in invalid value.", "A"); }
+            if ((A % N) == BigInteger.Zero) { throw new ArgumentException("A modulo N (A % N) equals 0, this is in invalid value.", "A"); }
 
-            while (((B % N) == 0) || B == null)
+            while (B == BigInteger.Zero || ((B % N) == BigInteger.Zero))
             {
                 b = Functional.Getb();
                 B = Functional.CalcB(F.Calck(g, N), v, b, g, N);

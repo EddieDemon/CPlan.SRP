@@ -82,7 +82,7 @@ namespace CPlan.SRP.Client
         {
             UserName = userName;
             Password = password;
-            while (((A % N) == 0) || A == null)
+            while (A == BigInteger.Zero || ((A % N) == BigInteger.Zero))
             {
                 a = Functional.Geta();
                 A = Functional.CalcA(a, g, N);
@@ -96,7 +96,7 @@ namespace CPlan.SRP.Client
         /// <param name="B">The public server value.</param>
         public void CalculateEverthing(byte[] salt, BigInteger B)
         {
-            if ((B % N) == 0) { throw new ArgumentException("B modulo N (B % N) equals 0, this is in invalid value.", "B"); }
+            if ((B % N) == BigInteger.Zero) { throw new ArgumentException("B modulo N (B % N) equals 0, this is in invalid value.", "B"); }
             S = F.CalcS(a, B, F.Calck(g, N), F.Calcx(salt, UserName, Password), F.Calcu(A, B, N), g, N); // Calculate S.
             K = F.CalcK(S); // Calculate K.
             M = F.M(Password, salt, A, B, K, g, N); // Calculate M.
