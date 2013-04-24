@@ -37,7 +37,7 @@ namespace CPlan.UI
         {
             Host h = new Host();
             Client c = new Client("MusicDemon", "123Test123");
-            while (h.run || c.run)
+            while (h.run && c.run)
             {
                 // Suspend the console from continueing until both the server and the client are done.
             }

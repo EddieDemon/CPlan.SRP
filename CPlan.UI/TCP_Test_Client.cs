@@ -38,7 +38,7 @@ namespace CPlan.UI
         BigInteger N = Constants.N1024Bit; // We will be using a default 1024-bit prime.
         BigInteger g = Constants.g1024Bit;
 
-        Carrier carrier = new Carrier("MusicDemon", "123Test123");
+        Carrier carrier = new Carrier("MusicDemon", "123Test123", KeySizes._2048);
 
         public Client(string userName, string password)
         {
