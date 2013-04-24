@@ -95,6 +95,7 @@ namespace CPlan.SRP.Host
             N = _N; g = _g;
             this.v = v;
             this.salt = salt;
+            this.UserName = userName;
             b = Functional.Getb();
 
             if ((A % N) == BigInteger.Zero) { throw new ArgumentException("A modulo N (A % N) equals 0, this is in invalid value.", "A"); }

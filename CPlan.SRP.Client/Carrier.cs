@@ -84,6 +84,7 @@ namespace CPlan.SRP.Client
             UserName = userName;
             Password = password;
             BigInteger _N, _g;
+            this.UserName = userName;
             Constants.GetNandg(size, out _N, out _g);
             N = _N; g = _g;
             while (A == BigInteger.Zero || ((A % N) == BigInteger.Zero))
