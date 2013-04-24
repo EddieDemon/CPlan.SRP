@@ -78,10 +78,14 @@ namespace CPlan.SRP.Client
         /// </summary>
         /// <param name="userName">The user name.</param>
         /// <param name="password">The password.</param>
-        public Carrier(string userName, string password)
+        /// <param name="size">The bit-size for the large prime.</param>
+        public Carrier(string userName, string password, KeySizes size)
         {
             UserName = userName;
             Password = password;
+            BigInteger _N, _g;
+            Constants.GetNandg(size, out _N, out _g);
+            N = _N; g = _g;
             while (A == BigInteger.Zero || ((A % N) == BigInteger.Zero))
             {
                 a = Functional.Geta();

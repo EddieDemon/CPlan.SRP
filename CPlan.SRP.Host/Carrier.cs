@@ -86,14 +86,17 @@ namespace CPlan.SRP.Host
         /// </summary>
         /// <param name="userName">The user name.</param>
         /// <param name="A">The public client value.</param>
-        public Carrier(string userName, BigInteger A, byte[] salt, BigInteger v) { this.v = v; this.salt = salt; b = Functional.Getb(); }
-        #endregion
-        /// <summary>
-        /// Caluclates <see cref="S"/>, <see cref="K"/>, <see cref="M"/> and <see cref="M2"/>.
-        /// </summary>
-        /// <param name="A">The public client value.</param>
-        public void CalculateEverthing(BigInteger A)
+        /// <param name="size">The bit-size for the large prime.</param>
+        /// <exception cref="ArgumentException">Thrown when A modulo N equals zero.</exception>
+        public Carrier(string userName, BigInteger A, byte[] salt, BigInteger v, Client.KeySizes size)
         {
+            BigInteger _N, _g;
+            Client.Constants.GetNandg(size, out _N, out _g);
+            N = _N; g = _g;
+            this.v = v;
+            this.salt = salt;
+            b = Functional.Getb();
+
             if ((A % N) == BigInteger.Zero) { throw new ArgumentException("A modulo N (A % N) equals 0, this is in invalid value.", "A"); }
 
             while (B == BigInteger.Zero || ((B % N) == BigInteger.Zero))
@@ -107,5 +110,6 @@ namespace CPlan.SRP.Host
             M = F.M(UserName, salt, A, B, K, g, N);
             M2 = F.M2(A, M, K);
         }
+        #endregion
     }
 }
