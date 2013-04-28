@@ -33,6 +33,10 @@ namespace CPlan.SRP.Client
         /// Gets or sets the private client value.
         /// </summary>
         private BigInteger a;
+        /// <summary>
+        /// Gets or sets the salt for the algorithm.
+        /// </summary>
+        private byte[] salt;
         #endregion
         #region Properties
         /// <summary>
@@ -104,8 +108,42 @@ namespace CPlan.SRP.Client
             if ((B % N) == BigInteger.Zero) { throw new ArgumentException("B modulo N (B % N) equals 0, this is in invalid value.", "B"); }
             S = F.CalcS(a, B, F.Calck(g, N), F.Calcx(salt, UserName, Password), F.Calcu(A, B, N), g, N); // Calculate S.
             K = F.CalcK(S); // Calculate K.
-            M = F.M(Password, salt, A, B, K, g, N); // Calculate M.
+            M = F.M(UserName, salt, A, B, K, g, N); // Calculate M.
             M2 = F.M2(A, M, K); // Calculate M2.
+            this.salt = salt;
+        }
+        /// <summary>
+        /// Get randomly generated salt. Overrides existing salt!
+        /// </summary>
+        /// <returns></returns>
+        public byte[] GetSalt()
+        {
+            this.salt = Functional.GetSalt();
+            return this.salt;
+        }
+        /// <summary>
+        /// Gets the verifier for the current known properties.
+        /// </summary>
+        /// <typeparam name="OutT">Defines the output type. Can only be byte[] or BigInteger.</typeparam>
+        /// <returns>v.</returns>
+        /// <exception cref="ArgumentException">Thrown when <typeparamref name="OutT"/> is not byte[] or BigInteger.</exception>
+        public object GetVerifier<OutT>() { return GetVerifier<OutT>(salt); }
+        /// <summary>
+        /// Gets the verifier for the current known properties using own salt.
+        /// </summary>
+        /// <param name="salt">the salt for the algorithm.</param>
+        /// <typeparam name="OutT">Defines the output type. Can only be byte[] or BigInteger.</typeparam>
+        /// <returns>v.</returns>
+        /// <exception cref="ArgumentException">Thrown when <typeparamref name="OutT"/> is not byte[] or BigInteger.</exception>
+        public object GetVerifier<OutT>(byte[] salt)
+        {
+            if (salt == null || salt.Length == 0) throw new InvalidOperationException("salt is null or empty.");
+            if (typeof(OutT).IsEquivalentTo(typeof(byte[])))
+                return Functional.GetVerifier(salt, UserName, Password, g, N).ToByteArray();
+            else if (typeof(OutT).IsEquivalentTo(typeof(BigInteger)))
+                return Functional.GetVerifier(salt, UserName, Password, g, N);
+            else
+                throw new ArgumentException("OutT is not byte[] or BigInteger.", "OutT");
         }
     }
 }

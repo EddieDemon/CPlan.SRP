@@ -28,7 +28,7 @@ using C = CPlan.SRP.Client.Functional;
 
 namespace CPlan.UI
 {
-    class Client
+    class TCPClient
     {
         public string UserName { get; private set; }
         public string Password { get; private set; }
@@ -40,7 +40,7 @@ namespace CPlan.UI
 
         Carrier carrier = new Carrier("MusicDemon", "123Test123", KeySizes._2048);
 
-        public Client(string userName, string password)
+        public TCPClient(string userName, string password)
         {
             UserName = userName;
             Password = password;

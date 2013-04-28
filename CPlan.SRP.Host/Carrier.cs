@@ -33,6 +33,7 @@ namespace CPlan.SRP.Host
         /// Gets or sets the private server value.
         /// </summary>
         private BigInteger b;
+        private BigInteger A;
         #endregion
         #region Properties
         /// <summary>
@@ -85,6 +86,8 @@ namespace CPlan.SRP.Host
         /// Initializes a new instance of the <see cref="Carrier"/> object with a user name and the public client value.
         /// </summary>
         /// <param name="userName">The user name.</param>
+        /// <param name="salt">The random salt.</param>
+        /// <param name="v">The client password verifier.</param>
         /// <param name="A">The public client value.</param>
         /// <param name="size">The bit-size for the large prime.</param>
         /// <exception cref="ArgumentException">Thrown when A modulo N equals zero.</exception>
@@ -96,10 +99,10 @@ namespace CPlan.SRP.Host
             this.v = v;
             this.salt = salt;
             this.UserName = userName;
-            b = Functional.Getb();
 
             if ((A % N) == BigInteger.Zero) { throw new ArgumentException("A modulo N (A % N) equals 0, this is in invalid value.", "A"); }
 
+            this.A = A;
             while (B == BigInteger.Zero || ((B % N) == BigInteger.Zero))
             {
                 b = Functional.Getb();
