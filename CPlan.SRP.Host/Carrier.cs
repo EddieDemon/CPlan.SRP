@@ -114,6 +114,49 @@ namespace CPlan.SRP.Host
             M = F.M(UserName, salt, A, B, K, g, N);
             M2 = F.M2(A, M, K);
         }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Carrier"/> object with a user name and the public client value.
+        /// </summary>
+        /// <param name="userName">The user name.</param>
+        /// <param name="salt">The random salt.</param>
+        /// <param name="v">The client password verifier.</param>
+        /// <param name="A">The public client value.</param>
+        /// <param name="N">The large prime.</param>
+        /// <param name="g">The generator.</param>
+        /// <exception cref="ArgumentException">Thrown when A modulo N equals zero.</exception>
+        public Carrier(string userName, BigInteger A, byte[] salt, BigInteger v, BigInteger N, BigInteger g)
+        {
+            this.N = N; this.g = g;
+            this.v = v;
+            this.salt = salt;
+            this.UserName = userName;
+
+            if ((A % N) == BigInteger.Zero) { throw new ArgumentException("A modulo N (A % N) equals 0, this is in invalid value.", "A"); }
+
+            this.A = A;
+            while (B == BigInteger.Zero || ((B % N) == BigInteger.Zero))
+            {
+                b = Functional.Getb();
+                B = Functional.CalcB(F.Calck(g, N), v, b, g, N);
+            }
+            BigInteger u = F.Calcu(A, B, N);
+            S = Functional.CalcS(A, v, u, b, N);
+            K = F.CalcK(S);
+            M = F.M(UserName, salt, A, B, K, g, N);
+            M2 = F.M2(A, M, K);
+        }
         #endregion
+        /// <summary>
+        /// Checks if the M is equal on both sides.
+        /// </summary>
+        /// <param name="clientM">The M value of the client.</param>
+        /// <returns>True if both M values are equal to each other; else false.</returns>
+        public bool CheckM(byte[] clientM) { return F.CompareArrays(M, clientM); }
+        /// <summary>
+        /// Checks if the M2 is equal on both sides.
+        /// </summary>
+        /// <param name="clientM">The M2 value of the client.</param>
+        /// <returns>True if both M2 values are equal to each other; else false.</returns>
+        public bool CheckM2(byte[] clientM2) { return F.CompareArrays(M2, clientM2); }
     }
 }

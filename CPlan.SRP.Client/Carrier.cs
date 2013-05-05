@@ -97,6 +97,25 @@ namespace CPlan.SRP.Client
                 A = Functional.CalcA(a, g, N);
             }
         }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Carrier"/> object with a user name and password.
+        /// </summary>
+        /// <param name="userName">The user name.</param>
+        /// <param name="password">The password.</param>
+        /// <param name="N">The large prime.</param>
+        /// <param name="g">The generator.</param>
+        public Carrier(string userName, string password, BigInteger N, BigInteger g)
+        {
+            UserName = userName;
+            Password = password;
+            this.UserName = userName;
+            this.N = N; this.g = g;
+            while (A == BigInteger.Zero || ((A % N) == BigInteger.Zero))
+            {
+                a = Functional.Geta();
+                A = Functional.CalcA(a, g, N);
+            }
+        }
         #endregion
         /// <summary>
         /// Caluclates <see cref="S"/>, <see cref="K"/>, <see cref="M"/> and <see cref="M2"/>.
@@ -112,6 +131,18 @@ namespace CPlan.SRP.Client
             M2 = F.M2(A, M, K); // Calculate M2.
             this.salt = salt;
         }
+        /// <summary>
+        /// Checks if the M is equal on both sides.
+        /// </summary>
+        /// <param name="serverM">The M value of the server.</param>
+        /// <returns>True if both M values are equal to each other; else false.</returns>
+        public bool CheckM(byte[] serverM) { return F. CompareArrays(M, serverM); }
+        /// <summary>
+        /// Checks if the M2 is equal on both sides.
+        /// </summary>
+        /// <param name="clientM">The M2 value of the server.</param>
+        /// <returns>True if both M2 values are equal to each other; else false.</returns>
+        public bool CheckM2(byte[] serverM2) { return F.CompareArrays(M2, serverM2); }
         /// <summary>
         /// Get randomly generated salt. Overrides existing salt!
         /// </summary>
