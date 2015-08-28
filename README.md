@@ -18,6 +18,10 @@ The project has been divided by three sub-projects.
 The server library contains functions that are not needed by the client library. However, most of the used functions are used on both libraries, that's why the server library has a reference to the client library.
 
 ## Changelog
+- 1.4.3.0:
+    * Made the libraries .Net 4.5.2.
+    * Minor C#.Net 6 syntax changes
+    * XML Documentation changes
 - 1.1.2.0: Tested several times with same setup. It is working but, in my eye's can use more testing, just to be sure.
 - 1.0.0.0: Initial upload. Had issues with formulae like S/x/u.
 

@@ -15,8 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-
-using System;
+ 
 using System.Numerics;
 using System.Security.Cryptography;
 
@@ -33,7 +32,7 @@ namespace CPlan.SRP.Host
         /// <returns></returns>
         public static BigInteger Getb()
         {
-            RandomNumberGenerator r = RNGCryptoServiceProvider.Create();
+            RandomNumberGenerator r = RandomNumberGenerator.Create();
             // TODO: Probably a and b must have the same length; Verify this.
             byte[] b = new byte[256 / 8]; // http://tools.ietf.org/html/rfc5054 Paragraph: 2.5.4.
             r.GetBytes(b);
@@ -41,9 +40,9 @@ namespace CPlan.SRP.Host
             return _b.Sign != 1 ? BigInteger.Negate(_b) : _b; // Check if a is negative, if so, change it to positve.
         }
         /// <summary>
-        /// 
+        /// Calculates the B value.
         /// </summary>
-        /// <param name="k">SRP-6 multiplier</param>
+        /// <param name="k">SRP-6a multiplier</param>
         /// <param name="v">The verifier.</param>
         /// <param name="b">Server private value.</param>
         /// <param name="g">The generator.</param>

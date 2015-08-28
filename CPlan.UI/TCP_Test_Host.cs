@@ -34,14 +34,14 @@ namespace CPlan.UI
         private TcpClient c;
         public volatile bool run;
 
-        static BigInteger N = CPlan.SRP.Client.Constants.N1024Bit; // We will be using a default 1024-bit prime.
-        static BigInteger g = CPlan.SRP.Client.Constants.g1024Bit;
+        static BigInteger N = SRP.Client.Constants.N1024Bit; // We will be using a default 1024-bit prime.
+        static BigInteger g = SRP.Client.Constants.g1024Bit;
 
         static BigInteger v = TCP_Test.v;
         static byte[] salt = TCP_Test.salt;
 
         string userName = "";
-        static BigInteger k = C.Calck(g, N);
+        static BigInteger k = C.Calck6a(g, N);
         static BigInteger b = H.Getb();
         BigInteger A = 0;
         BigInteger B = H.CalcB(k, TCP_Test.v, b, g, N);

@@ -125,7 +125,7 @@ namespace CPlan.SRP.Client
         public void CalculateEverthing(byte[] salt, BigInteger B)
         {
             if ((B % N) == BigInteger.Zero) { throw new ArgumentException("B modulo N (B % N) equals 0, this is in invalid value.", "B"); }
-            S = F.CalcS(a, B, F.Calck(g, N), F.Calcx(salt, UserName, Password), F.Calcu(A, B, N), g, N); // Calculate S.
+            S = F.CalcS(a, B, F.Calck6a(g, N), F.Calcx(salt, UserName, Password), F.Calcu(A, B, N), g, N); // Calculate S.
             K = F.CalcK(S); // Calculate K.
             M = F.M(UserName, salt, A, B, K, g, N); // Calculate M.
             M2 = F.M2(A, M, K); // Calculate M2.

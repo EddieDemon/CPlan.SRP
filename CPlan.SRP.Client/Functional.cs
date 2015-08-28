@@ -30,7 +30,7 @@ namespace CPlan.SRP.Client
     public static class Functional
     {
         /// <summary>
-        /// Gets or sets the hash algorithm for the SHA1 functions.
+        /// Gets or sets the hash algorithm for the hash functions.
         /// </summary>
         public static HashAlgorithm algorithm = SHA1.Create();
 
@@ -40,7 +40,7 @@ namespace CPlan.SRP.Client
         /// <returns></returns>
         public static BigInteger Geta()
         {
-            RandomNumberGenerator r = RNGCryptoServiceProvider.Create();
+            RandomNumberGenerator r = RandomNumberGenerator.Create();
             byte[] a = new byte[256 / 8]; // http://tools.ietf.org/html/rfc5054 Paragraph: 2.5.4.
             r.GetBytes(a);
             BigInteger _a = new BigInteger(a);
@@ -61,12 +61,12 @@ namespace CPlan.SRP.Client
             return A;
         }
         /// <summary>
-        /// Calculates the SRP-6 multiplier.
+        /// Calculates the SRP-6a multiplier.
         /// </summary>
         /// <param name="g">The generator.</param>
         /// <param name="N">The large prime.</param>
         /// <returns>SHA1(N | PAD(g))</returns>
-        public static BigInteger Calck(BigInteger g, BigInteger N)
+        public static BigInteger Calck6a(BigInteger g, BigInteger N)
         {
             //string _N = BitConverter.ToString(N.ToByteArray()).Replace("-", string.Empty);
             //byte[] _g = Encoding.ASCII.GetBytes(BitConverter.ToString(g.ToByteArray()).Replace("-", string.Empty).PadLeft(_N.Length, '0'));

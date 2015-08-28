@@ -38,7 +38,7 @@ namespace CPlan.UI
             // Client side public calculations.
             var a = C.Geta();
             var A = C.CalcA(a, g, N);
-            var k = C.Calck(g, N);
+            var k = C.Calck6a(g, N);
 
             // Host side public calculations.
             var b = H.Getb();

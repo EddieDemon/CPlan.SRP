@@ -106,7 +106,7 @@ namespace CPlan.SRP.Host
             while (B == BigInteger.Zero || ((B % N) == BigInteger.Zero))
             {
                 b = Functional.Getb();
-                B = Functional.CalcB(F.Calck(g, N), v, b, g, N);
+                B = Functional.CalcB(F.Calck6a(g, N), v, b, g, N);
             }
             BigInteger u = F.Calcu(A, B, N);
             S = Functional.CalcS(A, v, u, b, N);
@@ -137,7 +137,7 @@ namespace CPlan.SRP.Host
             while (B == BigInteger.Zero || ((B % N) == BigInteger.Zero))
             {
                 b = Functional.Getb();
-                B = Functional.CalcB(F.Calck(g, N), v, b, g, N);
+                B = Functional.CalcB(F.Calck6a(g, N), v, b, g, N);
             }
             BigInteger u = F.Calcu(A, B, N);
             S = Functional.CalcS(A, v, u, b, N);
